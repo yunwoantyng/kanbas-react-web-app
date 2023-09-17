@@ -36,50 +36,93 @@
         </ul>
       </td>
       <td valign="top">
-        <label for="assignmentName">Assignment Name</label> <br />
+        <select>
+          <option>SpeedGrader</option>
+          <option>Other</option>
+        </select>
+        <hr />
+        <label for="assignmentName"><h3>Assignment Name</h3></label>
         <input
           type="text"
-          value="Assingment 1 - HTML"
+          value="A1 - ENV + HTML"
           id="assignmentName"
           placeholder="Assignment Name"
-        />
-        <h3>Description</h3>
+        /><br /><br />
         <textarea cols="50" rows="5">
-          This is the first assignment to build Kanbas
-          </textarea
-        >
-  
-        <h3>Points</h3>
-        <input value="100" type="number" max="100" min="50" step="5" />
-  
-        <h3>Submission Type</h3>
+        This is the assignment description
+        </textarea><br /><br />
+        
+        Points<br />
+        <input value="100" type="number" max="100" min="50" step="5" /><br /><br />
+        
+        Assignment Group<br />
+        <select>
+          <option>ASSIGNMENTS</option>
+          <option>OTHER</option>
+        </select><br /><br />
+        
+        Display Grade as<br />
+        <select>
+          <option>Percentage</option>
+          <option>Raw data</option>
+        </select><br /><br />
+        
+        Submission Type<br />
+        <select>
+          <option>Online</option>
+          <option>Paper</option>
+        </select><br /><br />
+        
+        Online Entry Options<br />
         <input type="checkbox" id="textEntry" />
         <label for="textEntry">Text Entry</label><br />
         <input type="checkbox" checked /> Website URL <br />
-  
         <label> <input type="checkbox" /> Media Recordings </label> <br />
-  
-        <input type="checkbox" /> File Uploads<br />
-  
-        <h3>Favorite Music Genre</h3>
-        <input type="radio" name="genre" /> Rock <br />
-        <input type="radio" name="genre" checked /> Pop <br />
-        <input type="radio" name="genre" /> Country <br />
-        <input type="radio" name="genre" /> Hip Hop <br />
-  
-        <h3>Favorite Movie Genre</h3>
-        <input type="radio" name="movie" /> Action <br />
-        <input type="radio" name="movie" /> Comedy <br />
-        <input type="radio" name="movie" checked /> Drama <br />
-        <input type="radio" name="movie" /> Horror <br />
-  
-        <h3>Due Date</h3>
-        <input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
-  
-        <h3>Other</h3>
-        <input type="color" value="#ff0000" />
-        <input type="email" />
-        <input type="tel" />
+        <input type="checkbox" /> Student Annotation<br />
+        <input type="checkbox" /> File Uploads<br /><br />
+        
+        Submission Attempts<br />
+        <select>
+          <option>Unlimited</option>
+          <option>One Time</option>
+        </select><br /><br />
+        
+        Plagiarism Review<br />
+        <select>
+          <option>None</option>
+          <option>Yes</option>
+        </select><br /><br />
+        
+        Group Assignment<br />
+        <input type="checkbox" id="groupAssignment" />
+        <label for="groupAssignment">This is a group assignment</label><br /><br />
+        
+        Peer Reviews<br />
+        <input type="checkbox" id="peerReview" />
+        <label for="peerReview">Require Peer Reviews</label><br /><br />
+        
+        Assign<br />
+        <label for="assignTo">Assign to</label><br />
+        <input
+          type="text"
+          value="Everyone"
+          id="assignTo"
+          placeholder="Everyone"
+        /><br /><br />
+        
+        Due<br />
+        <input type="date" value="2023-09-18" min="2023-09-01" max="2023-12-18" /><br /><br />
+        
+        Available from<br />
+        <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /><br /><br />
+        
+        Until<br />
+        <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /><br /><br />
+        
+        <form action="/Kanbas/Courses/Assignments/screen.html">
+          <button>Cancel</button>
+          <button>Save</button>
+        </form>
       </td>
     </tr>
   </table>
