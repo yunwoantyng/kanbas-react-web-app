@@ -37,82 +37,181 @@
       </td>
       <td valign="top">
         <table border="1" width="100%">
+          <tr>
+              <td><a href="/Kanbas/Courses/Settings/screen.html">Course Details</a></td>
+              <td><a href="#">Sections</a></td>
+              <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
+              <td><a href="#">Apps</a></td>
+              <td><a href="#">Feature Options</a></td>
+              <td><a href="#">Integrations</a></td>
+          </tr>
+      </table>
+      <table width="100%">
+          <h1>Course Details</h1>
+          <tbody>
             <tr>
-                <td><a href="/Kanbas/Courses/Settings/screen.html">Course Details</a></td>
-                <td><a href="#">Sections</a></td>
-                <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
-                <td><a href="#">Apps</a></td>
-                <td><a href="#">Feature Options</a></td>
-                <td><a href="#">Integrations</a></td>
+              <td><b>Image:</b></td>
+              <td><button>Choose Image</button></td>
             </tr>
+            <tr>
+              <td><b>Name:</b></td>
+              <td>CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</td>
+            </tr>
+            <tr>
+              <td><b>Course Code:</b></td>
+              <td>CS4550.12631.202410</td>
+            </tr>
+            <tr>
+              <td><b>BluePrint Course:</b></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><b>Course Template:</b></td>
+              <td><input type="checkbox" />Enable course as a Course Template</td>
+            </tr>
+            <tr>
+              <td><b>Time Zone:</b></td>
+              <td><select>
+                  <option>Eastern Time (US & Canada)</option>
+                  <option>Central Time (US & Canada)</option>
+                  <option>Mountain Time (US & Canada)</option>
+                  <option>Pacific Time (US & Canada)</option>
+                  <option>Alaska</option>
+                  <option>Hawaii</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>SIS ID:</b></td>
+              <td>CS4550.12631.202410</td>
+            </tr>
+            <tr>
+              <td><b>Subaccount:</b></td>
+              <td>CS Undergrad</td>
+            </tr>
+            <tr>
+              <td><b>Term:</b></td>
+              <td>202410_1 Fall 2023 Semester Full Term</td>
+            </tr>
+            <tr>
+              <td><b>Participation:</b></td>
+              <td><select>
+                  <option>Term</option>
+                  <option>Restricted</option>
+                  <option>Off</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Course participation is limited to <b>term</b> start and end dates.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>Start</b><br /><input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><b>End</b><br /><input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" />Restrict students from viewing course before term start date</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" />Restrict students from viewing course after term end date</td>
+            </tr>
+            <tr>
+              <td><b>Default due time:</b></td>
+              <td><select>
+                  <option>Account default(11:59 PM)</option>
+                  <option>Other</option>
+                  </select>
+              </td>
+            <tr>
+              <td></td>
+              <td>This influences the user interface for setting due dates. It does not change the time due for any existing assignments.</td>
+            </tr>
+            </tr>
+            <tr>
+              <td><b>Language:</b></td>
+              <td><select>
+                  <option>English</option>
+                  <option>Chinese (Traditional)</option>
+                  <option>Arabic</option>
+                  <option>Thai</option>
+                  <option>Other</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>This will override any user/system language preferences. This is only recommend for foreign language courses.</td>
+            </tr>
+            <tr>
+              <td><b>File Storage:</b></td>
+              <td>10000 megabytes</td>
+            </tr>
+            <tr>
+              <td><b>Large Course:</b></td>
+              <td><input type="checkbox" />Launch SpeedGrader Filtered by Student Group</td>
+            </tr>
+            <tr>
+              <td><b>Grading Scheme:</b></td>
+              <td><input type="checkbox" />Enable course grading scheme</td>
+            </tr>
+            <tr>
+              <td><b>License:</b></td>
+              <td><select>
+                  <option>Private(Copyrighted)</option>
+                  <option>None</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>File Copyright:</b></td>
+              <td><input type="checkbox" />Copyright and license information must be provided for files before they are published.</td>
+            </tr>
+            <tr>
+              <td><b>Visibility:</b></td>
+              <td>If you need to make your course public please contact your administrator/support.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><select>
+                  <option>Course</option>
+                  <option>Public</option>
+                  <option>Public (only course activities and files)</option>
+                  <option>Private</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" />Include this course in the public course index</td>
+            </tr>
+            <tr>
+              <td><b>Format:</b></td>
+              <td><select>
+                  <option>On-Campus</option>
+                  <option>Face-to-Face</option>
+                  <option>Hybrid</option>
+                  <option>Online</option>
+                  <option>Other</option></select>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Mastery Paths:</b></td>
+              <td><input type="checkbox" />Enable individual learning paths for students based on assessment</td>
+            </tr>
+            <tr>
+              <td><b>Description:</b></td>
+              <td><textarea rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#">more options</a></td>
+            </tr>
+          </tbody>
         </table>
-        <h1>Course Details</h1>
-        Image: <button>Choose Image</button><br /><br />
-        Name: CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]<br /><br />
-        Course Code: CS4550.12631.202410<br /><br />
-        BluePrint Course: No<br /><br />
-        Course Template: <input type="checkbox" />Enable course as a Course Template<br /><br />
-        Time Zone: <select>
-            <option>Eastern Time (US & Canada)</option>
-            <option>Central Time (US & Canada)</option>
-            <option>Mountain Time (US & Canada)</option>
-            <option>Pacific Time (US & Canada)</option>
-            <option>Alaska</option>
-            <option>Hawaii</option></select><br /><br />
-        SIS ID: CS4550.12631.202410<br /><br />
-        Subaccount: CS Undergrad<br /><br />
-        Term: 202410_1 Fall 2023 Semester Full Term<br /><br />
-        Participation: <select>
-            <option>Term</option>
-            <option>Restricted</option>
-            <option>Off</option></select><br />
-            <pre>          Course participation is limited to term start and end dates.<br />
-                  Start
-                  <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" />
-                  End
-                  <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" />
-                  <input type="checkbox" />Restrict students from viewing course before term start date
-                  <input type="checkbox" />Restrict students from viewing course after term end date
-            </pre>
-        Default due time: <select>
-            <option>Account default(11:59 PM)</option>
-            <option>Other</option>
-        </select><pre>              This influences the user interface for setting due dates. It does not change the time
-                      due for any existing assignments.</pre>
-        Language: <select>
-            <option>English</option>
-            <option>Chinese (Traditional)</option>
-            <option>Arabic</option>
-            <option>Thai</option>
-            <option>Other</option></select>
-            <pre>        This will override any user/system language preferences. This is only recommend
-                for foreign language courses.</pre><br />
-        File Storage: 10000 megabytes<br /><br />
-        Large Course: <input type="checkbox" />Launch SpeedGrader Filtered by Student Group<br /><br />
-        Grading Scheme: <input type="checkbox" />Enable course grading scheme<br /><br />
-        License: <select>
-            <option>Private(Copyrighted)</option>
-            <option>None</option></select><br /><br />
-        File Copyright: <input type="checkbox" />Copyright and license information must be provided for files before they are published.<br /><br />
-        Visibility: If you need to make your course public please contact your administrator/support.<br />
-        <pre>       <select>
-            <option>Course</option>
-            <option>Public</option>
-            <option>Public (only course activities and files)</option>
-            <option>Private</option></select>
-               <input type="checkbox" />Include this course in the public course index</pre><br />
-        Format: <select>
-            <option>On-Campus</option>
-            <option>Face-to-Face</option>
-            <option>Hybrid</option>
-            <option>Online</option>
-            <option>Other</option></select><br /><br />
-        Mastery Paths: <input type="checkbox" />Enable individual learning paths for students based on assessment<br /><br />
-        Description: <textarea rows="4" cols="50"></textarea><br />
-        <pre>           <a href="#">more options</a>
-        <hr />
-                                                       <button>Update Course Details</button></pre>
-            
+      <hr />
+      <pre>                                                         <button>Update Course Details</button></pre>      
       </td>
     </tr>
   </table>
