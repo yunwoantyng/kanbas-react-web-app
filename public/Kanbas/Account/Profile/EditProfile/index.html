@@ -1,14 +1,30 @@
-<h1>Edit Profile</h1>
+<h1>Alice Wonderland</h1>
 
 <form action="/Kanbas/Account/Profile/screen.html">
-  Name: <input name="fullName" type="text" value="Alice Wonderland" />
-  <br />
-  Biography:<br />
-  <textarea name="biography">
+  Name:* <input name="fullName" type="text" value="Alice Wonderland" />
+  Pronouns: <select>
+    <option value="none">None</option>
+    <option value="she">She/Her</option>
+    <option value="he">He/Him</option>
+    <option value="they">They/Them</option>
+  </select><p></p>
+  Title: <input name="title" type="text" /><p></p>
+<h2>Contact</h2>
+No registered services, you can add some on the <a href="#">settings</a> page.<br/><br />
+<h2>Biography:</h2>
+  <textarea name="biography" cols="50" rows="5">
 I followed the white rabbit down the hole.
-</textarea
-  >
-  <br />
-  <button>Save</button>
+</textarea>
+<h2>Links:</h2>
+<ul>
+  <li><a href="#">Youtube</a></li>
+</ul><p></p>
+<pre>      Title                  URL
+<input name="linkTitle" type="text" placeholder="YouTube" /> → <input name="linkURL" type="text" placeholder="https://www.youtube.com"/> <a href="#">Remove</a>
+</pre>
+  <button>Add another link</button><br />
   <button>Cancel</button>
+  <button>Save Profile</button><br />
+  <button>Edit Profile</button>
+  <button>Cancel Editing</button>
 </form>
