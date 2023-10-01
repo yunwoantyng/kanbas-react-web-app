@@ -1,61 +1,129 @@
-<table border="1" width="100%">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared Content</a></li>
-        <li><a href="#">The Hub</a></li>
-        <li><a href="#">Qwickly Course Tools</a></li>
-        <li><a href="#">Global Announcement</a></li>
-    </ul>
-    </td>
-    <td valign="top">
-      <h1>Alice Wonderland</h1>
+<link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+<link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
-      <form action="/Kanbas/Account/Profile/index.html">
-        Name:* <input name="fullName" type="text" value="Alice Wonderland" />
-        Pronouns: <select>
-          <option value="none">None</option>
-          <option value="she">She/Her</option>
-          <option value="he">He/Him</option>
-          <option value="they">They/Them</option>
-        </select><p></p>
-        Title: <input name="title" type="text" /><p></p>
+<nav style="left:100px" class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">
+      <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
+      &nbsp&nbsp&nbsp&nbsp&nbsp
+      Alice Wonderland's Profile
+    </span>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class ="d-flex">
+    <div style="position: fixed; top: 0px; left: 0px">
+      <ul class="list-group wd-kanbas-navigation">
+        <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+        <li class="list-group-item active"><a href="/Kanbas/Account/Profile/index.html">
+            <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+            Account</a></li>
+        <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            Dashboard</a></li>
+        <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            Courses</a></li>
+        <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            Calendar</a></li>
+        <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+        <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+        <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+        <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+      </div>
+      <div style="position: fixed; left: 107px; top: 70px" class="list-group wd-course-navigation">
+        <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+        <a href="/Kanbas/Account/Profile/index.html" class="list-group-item list-group-item-action active">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action">Files</a>
+        <a href="#" class="list-group-item list-group-item-action">Settings</a>
+        <a href="#" class="list-group-item list-group-item-action">ePortfolios</a>
+        <a href="#" class="list-group-item list-group-item-action">Shared Content</a>
+        <a href="#" class="list-group-item list-group-item-action">The Hub</a>
+        <a href="#" class="list-group-item list-group-item-action">Qwickly Course<br/>Tools</a>
+        <a href="#" class="list-group-item list-group-item-action">Global<br/>Announcement</a>
+    </div>
+    <div style="position: relative; left: 280px; top: 100px">
+      <i class="fa fa-user-circle-o" aria-hidden="true" style="color:gray; font-size: 10em"></i><br/><br/>
+      <div class="mb-3 row">
+        <label for="name" class="col-sm-2 col-form-label"><b>Name:*</b></label>
+        <input type="text" class="form-control" id="name" value="Alice Wonderland">
+      </div>
+      <div class="mb-3 row"><b>Pronouce:</b>
+        <select class="form-select">
+          <option selected>None</option>
+          <option value="1">She/Her</option>
+          <option value="2">He/Him</option>
+          <option value="3">Prefer not to say</option>
+       </select>
+      </div>
+      <div class="mb-3 row">
+        <label for="title" class="col-sm-2 col-form-label"><b>Title:</b></label>
+        <input type="text" class="form-control" id="title">
+      </div>
       <h2>Contact</h2>
-      No registered services, you can add some on the <a href="#">settings</a> page.<br/><br />
-      <h2>Biography:</h2>
-        <textarea name="biography" cols="50" rows="5">I followed the white rabbit down the hole.
-      </textarea>
-      <h2>Links:</h2>
-      <ul>
-        <li><a href="#">YouTube</a> ⍈ Links to an external site</li>
-      </ul><p></p>
-      <pre>          <b>Title</b>                  <b>URL</b>
-      <input name="linkTitle" type="text" placeholder="YouTube" /> → <input name="linkURL" type="text" placeholder="https://www.youtube.com"/> <a href="#">Remove</a>
-      </pre>
-        <button>Add another link</button><br />
-        <button>Cancel</button>
-        <button>Save Profile</button><br />
-        <button>Edit Profile</button>
-        <button>Cancel Editing</button>
-      </form>
-    </td>
-  </tr>
-</table>
+      No registered services, you can add some on the <a href="#" style="color:red;text-decoration: none">settings</a> page.<br/><br />
+      <div class="mb-3 row">
+        <label for="biography"
+               class="col-sm-2 col-form-label">
+               <h2>Biography</h2></label>
+        <textarea class="form-control"
+                  id="biography"
+                  rows="3"
+                  value="I followed the white rabbit down the hole."></textarea>
+      </div>
+      <h2>Links</h2>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-5">
+            <b>Title</b>
+          </div>
+          <div class="col-1"> </div>
+          <div class="col-5">
+            <b>URL</b>
+          </div>
+          <div class="col-1"> </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <input type="text" value="YouTube">
+          </div>
+          <div class="col-1">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </div>
+          <div class="col-5">
+            <input type="text" value="https://www.youtube.com/">
+          </div>
+          <div class="col-1">
+            <i class="fa fa-times" aria-hidden="true" style="color:red"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+          <button type="button" class="btn btn-light">Add another link</button>
+        </div>
+        </div>
+      </div>
+        <hr/>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-4">
+            <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
+               Cancel</a>
+          </div>
+          <div class="col-4">
+            <a href="/Kanbas/Account/Profile/index.html" class="btn btn-danger" role="button" data-bs-toggle="button">
+               Save Profile</a>
+          </div>
+      </div>
+    </div>
+    <div class="float-end" style="position:fixed; top: 150px; right:200px">
+      <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
+        <i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</a>
+    </div>
+  </div>
+</div>
+
