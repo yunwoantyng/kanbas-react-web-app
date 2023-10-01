@@ -1,6 +1,8 @@
 .wd-course-navigation.list-group {
     border-radius: 0;
-  }
+    margin: 15px;
+    margin-top: 100px;
+}
   
 .wd-course-navigation .list-group-item {
     color: red;
@@ -25,4 +27,48 @@
 .wd-button a{
     color: black;
     text-decoration: none;
+}
+
+.wd-breadcrumb {
+    width: 1000px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.wd-breadcrumb i{
+    margin-right: 50px;
+    font-size: 2em;
+}
+
+.wd-breadcrumb a{
+    color: red;
+    text-decoration: none;
+}
+
+.wd-modules {
+    margin: 10px;
+}
+
+.wd-modules a{
+    color:red;
+    text-decoration: none;
+}
+.wd-modules i{
+    color:green;
+}
+
+.wd-modules a i{
+    color:red;
+}
+
+.wd-modules .list-group-item.title{
+    color: black;
+    font-weight: bold;
+    background-color: white
+}
+.wd-modules .list-group-item.indented{
+    padding-left: 30px;
+    color: black;
+    background-color: white
 }

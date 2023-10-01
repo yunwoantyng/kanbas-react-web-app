@@ -1,0 +1,12 @@
+.wd-dashboard-grid .col-md-4{
+    width: 250px;
+}
+
+.wd-dashboard-grid .col {
+    width: 250px;
+}
+
+.wd-dashboard-grid a{
+    color: rgb(78, 95, 160);
+    text-decoration: none;
+}

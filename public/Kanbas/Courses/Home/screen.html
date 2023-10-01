@@ -1,8 +1,24 @@
 <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
-<table border="1" width="100%">
-    <tr>
-      <td valign="top">
+<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+
+<nav class="wd-breadcrumb navbar navbar-expand-lg" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
+    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+</nav>
+
+
+<div class="container-fluid" style="padding: 0rem">
+  <div class ="d-flex">
+    <div class="wd-kanbas-navigation">
         <ul class="list-group wd-kanbas-navigation">
           <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
           <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
@@ -11,7 +27,7 @@
           <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
               <i class="fa fa-tachometer" aria-hidden="true"></i>
               Dashboard</a></li>
-          <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
+          <li class="list-group-item active"><a href="/Kanbas/Courses/Home/screen.html">
               <i class="fa fa-book" aria-hidden="true"></i>
               Courses</a></li>
           <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
@@ -22,30 +38,46 @@
           <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
           <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
       </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Panopto Video</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="#">Announcements</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Rubrics</a></li>
-          <li><a href="#">Outcomes</a></li>
-          <li><a href="#">Collaborations</a></li>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul>
-      </td>
-      <td valign="top">
+    </div>
+      <div class="list-group wd-course-navigation">
+        <a
+          href="/Kanbas/Courses/Home/screen.html"
+          class="list-group-item list-group-item-action active"
+          aria-current="true"
+        >
+          Home
+        </a>
+        <a 
+          href="/Kanbas/Courses/Modules/screen.html" 
+          class="list-group-item list-group-item-action"
+          aria-current="true">
+          Modules</a>
+        <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+        <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+        <a 
+          href="/Kanbas/Courses/Assignments/screen.html"
+          class="list-group-item list-group-item-action">Assignments</a>
+        <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+        <a 
+          href="/Kanbas/Courses/Grades/screen.html" 
+          class="list-group-item list-group-item-action">
+          Grades</a>
+        <a href="#" class="list-group-item list-group-item-action">People</a>
+        <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+        <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+        <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+        <a href="#" class="list-group-item list-group-item-action">Pages</a>
+        <a href="#" class="list-group-item list-group-item-action">Files</a>
+        <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+        <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+        <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+        <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+        <a 
+          href="/Kanbas/Courses/Settings/screen.html" 
+          class="list-group-item list-group-item-action">
+          Settings</a>
+      </div>
+      <div>
         <button>Collapse All</button>
         <button>View Progress</button>
         <select>
@@ -115,7 +147,8 @@
             </ul>
           </li>
         </ul>
-      </td>
+      </div>
+      <div>
       <td valign="top">
         <h2>Course Status</h2>
         <button>Unpublish</button>
@@ -137,5 +170,5 @@
           <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a><br /></li>
         </ul>
       </td>
-    </tr>
-  </table>
+    </div>
+  </div>

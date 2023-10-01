@@ -2,6 +2,11 @@
     color: white;
     text-decoration: none;
 }
+
+.wd-kanbas-navigation {
+    background-color: black;
+}
+
 .wd-kanbas-navigation a i {
     color: red;
     font-size: 2em;
