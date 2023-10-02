@@ -1,164 +1,228 @@
-<table width="100%" border="1">
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
+<link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+<link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+
+<nav class="wd-breadcrumb navbar navbar-expand-lg" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
+    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+  </ol>
+</nav>
+
+
+<div class="container-fluid" style="padding: 0rem">
+  <div class ="d-flex">
+    <div class="wd-kanbas-navigation" style="position:static">
+        <ul class="list-group wd-kanbas-navigation">
+          <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+          <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
+              <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+              Account</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              Dashboard</a></li>
+          <li class="list-group-item active"><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Courses</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
       </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Panopto Video</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="#">Announcements</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Rubrics</a></li>
-          <li><a href="#">Outcomes</a></li>
-          <li><a href="#">Collaborations</a></li>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <select>
-          <option>Gradebook</option>
-          <option>Other</option>
-        </select>
-        <button>Import</button>
-        <select>
-          <option>Export</option>
-          <option>Unpublish</option>
-        </select>
-        <button>Configure</button>
-        
-        
-        <h3>Student Names</h3>
-        <input
-          title="Type the name of the student to search for"
-          placeholder="Search Students"/><br />
-        
-        <h3>Assignment Names</h3>
-        <input 
-          title="Type the name of the student to search for"
-          placeholder="Search Assigments"/><br /><br />     
-        <button>Apply Filters</button><br /><br />
-        <table border="1" width="100%">
-          <thead>
-            <tr>
-              <th>Student Name</th>
-              <th>A1 - SETUP<br />Out of 100</th>
-              <th>A2 - HTML<br />Out of 100</th>
-              <th>A3 - CSS<br />Out of 100</th>
-              <th>A4 - BOOTSTRAP<br />Out of 100</th>
-              <th>A5 - JAVASCRIPT<br />Out of 100</th>
-              <th>A6 - REACT<br />Out of 100</th>
-              <th>A7 - REDUX<br />Out of 100</th>
-              <th>A8 - NODE<br />Out of 100</th>
-              <th>A9 - MONGO<br />Out of 100</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alice Wonderland</td>
-              <td>100</td>
-              <td><input type="number" value="95" max="100" min="0" /></td>
-              <td>77</td>
-              <td>92</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Bob Builder</td>
-              <td><input type="number" value="43" max="100" min="0" /></td>
-              <td>60</td>
-              <td>91</td>
-              <td>76</td>
-              <td>65</td>
-              <td>88</td>
-              <td>100</td>
-              <td>92</td>
-              <td>79</td>
-            </tr>
-            <tr>
-              <td>Charlie Chaplin</td>
-              <td>93</td>
-              <td>99</td>
-              <td>100</td>
-              <td>87</td>
-              <td>81</td>
-              <td>95</td>
-              <td><input type="number" value="77" max="100" min="0" /></td>
-              <td>100</td>
-              <td>93</td>
-            </tr>
-            <tr>
-              <td>Daniel Defoe</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td>98</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td><input type="number" value="66" max="100" min="0" /></td>
-            </tr>
-            <tr>
-              <td>Edgar Evers</td>
-              <td>100</td>
-              <td>100</td>
-              <td><input type="number" value="90" max="100" min="0" /></td>
-              <td>100</td>
-              <td>98</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Frank Frazetta</td>
-              <td>100</td>
-              <td>100</td>
-              <td>20</td>
-              <td>100</td>
-              <td>98</td>
-              <td>100</td>
-              <td>70</td>
-              <td>0</td>
-              <td><input type="number" value="82" max="100" min="0" /></td>
-            </tr>
-            <tr>
-              <td>George Gershwin</td>
-              <td>100</td>
-              <td>100</td>
-              <td><input type="number" value="97" max="100" min="0" /></td>
-              <td>100</td>
-              <td>98</td>
-              <td>100</td>
-              <td><input type="number" value="65" max="100" min="0" /></td>
-              <td>100</td>
-              <td>100</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-</table>
+    </div>
+      <div class="list-group wd-course-navigation">
+        <a
+          href="/Kanbas/Courses/Home/screen.html"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          Home
+        </a>
+        <a 
+          href="/Kanbas/Courses/Modules/screen.html" 
+          class="list-group-item list-group-item-action"
+          aria-current="true">
+          Modules</a>
+        <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+        <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+        <a 
+          href="/Kanbas/Courses/Assignments/screen.html"
+          class="list-group-item list-group-item-action">Assignments</a>
+        <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+        <a 
+          href="/Kanbas/Courses/Grades/screen.html" 
+          class="list-group-item list-group-item-action active">
+          Grades</a>
+        <a href="#" class="list-group-item list-group-item-action">People</a>
+        <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+        <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+        <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+        <a href="#" class="list-group-item list-group-item-action">Pages</a>
+        <a href="#" class="list-group-item list-group-item-action">Files</a>
+        <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+        <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+        <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+        <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+        <a 
+          href="/Kanbas/Courses/Settings/screen.html" 
+          class="list-group-item list-group-item-action">
+          Settings</a>
+      </div>
+      <div>
+        <div class="col" style="margin-top: 120px">
+          <div class="row">
+            <div class="container-fluid dropdown" style="margin-left:100px">
+              <div class="float-end">
+                <a href="#" class="btn btn-light" role="button" data-bs-toggle="button">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                    Import</a>
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-upload" aria-hidden="true"></i>&nbsp;Export</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                 <a href="#" class="btn btn-light" role="button" data-bs-toggle="button"><i class="fa fa-cog" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin:10px">
+              <div class="col-6">
+                <h6>Student Names</h6>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option selected><i class="fa fa-search" aria-hidden="true">Search Students</i></option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <h6>Assignment Names</h6>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option selected><i class="fa fa-search" aria-hidden="true">Search Assignments</i></option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div> 
+          </div>
+          <div class="row" style="margin:10px">
+            <div class="col-5">
+            <a href="#" class="btn btn-light" role="button" data-bs-toggle="button">
+              <i class="fa fa-filter" aria-hidden="true"></i>Apply Filters</a>
+           </div>
+          </div>
+
+          <div class="row" style="margin:10px">
+            <table class="table table-striped text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">A1 - SETUP<br />Out of 100</th>
+                  <th scope="col">A2 - HTML<br />Out of 100</th>
+                  <th scope="col">A3 - CSS<br />Out of 100</th>
+                  <th scope="col">A4 - BOOTSTRAP<br />Out of 100</th>
+                  <th scope="col">A5 - JAVASCRIPT<br />Out of 100</th>
+                  <th scope="col">A6 - REACT<br />Out of 100</th>
+                  <th scope="col">A7 - REDUX<br />Out of 100</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Alice Wonderland</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mark Webber</th>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Otto Li</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bob Builder</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dylan Hunter</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Kayla Lavin</th>
+                  <td>90</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">George Gershwin</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+  integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>

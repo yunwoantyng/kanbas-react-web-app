@@ -1,127 +1,269 @@
-<table width="100%" border="1">
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Panopto Video</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="#">Announcements</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Rubrics</a></li>
-          <li><a href="#">Outcomes</a></li>
-          <li><a href="#">Collaborations</a></li>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <select>
-          <option>SpeedGrader</option>
-          <option>Other</option>
-        </select>
-        <hr />
-        <label for="assignmentName"><h3>Assignment Name</h3></label>
-        <input
-          type="text"
-          value="A1 - ENV + HTML"
-          id="assignmentName"
-          placeholder="Assignment Name"
-        /><br /><br />
-        <textarea cols="50" rows="5">This is the assignment description
-        </textarea><br /><br />
-        
-        Points<br />
-        <input value="100" type="number" max="100" min="50" step="5" /><br /><br />
-        
-        Assignment Group<br />
-        <select>
-          <option>ASSIGNMENTS</option>
-          <option>OTHER</option>
-        </select><br /><br />
-        
-        Display Grade as<br />
-        <select>
-          <option>Percentage</option>
-          <option>Raw data</option>
-        </select><br /><br />
-        
-        Submission Type<br />
-        <select>
-          <option>Online</option>
-          <option>Paper</option>
-        </select><br /><br />
-        
-        Online Entry Options<br />
-        <input type="checkbox" id="textEntry" />
-        <label for="textEntry">Text Entry</label><br />
-        <input type="checkbox" checked /> Website URL <br />
-        <label> <input type="checkbox" /> Media Recordings </label> <br />
-        <input type="checkbox" /> Student Annotation<br />
-        <input type="checkbox" /> File Uploads<br /><br />
-        
-        Submission Attempts<br />
-        <select>
-          <option>Unlimited</option>
-          <option>One Time</option>
-        </select><br /><br />
-        
-        Plagiarism Review<br />
-        <select>
-          <option>None</option>
-          <option>Yes</option>
-        </select><br /><br />
-        
-        Group Assignment<br />
-        <input type="checkbox" id="groupAssignment" />
-        <label for="groupAssignment">This is a group assignment</label><br /><br />
-        
-        Peer Reviews<br />
-        <input type="checkbox" id="peerReview" />
-        <label for="peerReview">Require Peer Reviews</label><br /><br />
-        
-        Assign<br />
-        <label for="assignTo">Assign to</label><br />
-        <input
-          type="text"
-          value="Everyone"
-          id="assignTo"
-          placeholder="Everyone"
-        /><br /><br />
-        
-        Due<br />
-        <input type="date" value="2023-09-18" min="2023-09-01" max="2023-12-18" /><br /><br />
-        
-        Available from<br />
-        <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /><br /><br />
-        
-        Until<br />
-        <input type="date" value="2023-09-18" min="2023-09-18" max="2023-09-30" /><br /><br />
-        
-        <form action="/Kanbas/Courses/Assignments/screen.html">
-          <button>Cancel</button>
-          <button>Save</button>
-        </form>
-      </td>
-    </tr>
-  </table>
+<link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+<link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="wd-breadcrumb navbar navbar-expand-lg" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
+    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+    <li class="breadcrumb-item" aria-current="page">Assignments</li>
+    <li class="breadcrumb-item" aria-current="page">A1 - ENV + HTML</li>
+  </ol>
+</nav>
+
+<div class="container-fluid" style="padding: 0rem">
+  <div class ="d-flex">
+    <div class="wd-kanbas-navigation" style="position:static">
+        <ul class="list-group wd-kanbas-navigation">
+          <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+          <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
+              <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+              Account</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              Dashboard</a></li>
+          <li class="list-group-item active"><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Courses</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+      </ul>
+    </div>
+    <div class="list-group wd-course-navigation">
+        <a
+          href="/Kanbas/Courses/Home/screen.html"
+          class="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          Home
+        </a>
+        <a 
+          href="/Kanbas/Courses/Modules/screen.html" 
+          class="list-group-item list-group-item-action"
+          aria-current="true">
+          Modules</a>
+        <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+        <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+        <a 
+          href="/Kanbas/Courses/Assignments/screen.html"
+          class="list-group-item list-group-item-action active">Assignments</a>
+        <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+        <a 
+          href="/Kanbas/Courses/Grades/screen.html" 
+          class="list-group-item list-group-item-action">
+          Grades</a>
+        <a href="#" class="list-group-item list-group-item-action">People</a>
+        <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+        <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+        <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+        <a href="#" class="list-group-item list-group-item-action">Pages</a>
+        <a href="#" class="list-group-item list-group-item-action">Files</a>
+        <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+        <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+        <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+        <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+        <a 
+          href="/Kanbas/Courses/Settings/screen.html" 
+          class="list-group-item list-group-item-action">
+          Settings</a>
+      </div>
+      <div>
+        <div class="col" style="margin-top: 120px">
+          <div class="row">
+            <div class="container-fluid">
+            <button class="btn btn-light float-end" type="button" aria-expanded="false">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+            <div class="float-end" style="color:green; font-weight: bold; margin-right: 10px;"><i class="fa fa-check-circle" aria-hidden="true"></i>
+              Published
+            </div>
+          </div>
+          </div>
+          
+          <div class="row" style="margin-top:20px">
+            <hr/>
+            </div>
+          <div class="row wd-assignment-editor" style="margin:10px; width:100%">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Assignment Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="A1 - ENV + HTML">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row">
+              <div class="col-3"><label for="exampleFormControlInput1" class="form-label">Points</label></div>
+              <div class ="col-6">
+              <input type="number" min="0" step="1" class="form-control" id="exampleFormControlInput1" placeholder="100"></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><label for="exampleFormControlInput1" class="form-label">Assignment Group</label></div>
+              <div class ="col-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>ASSIGNMENTS</option>
+                  <option value="1">A1</option>
+                  <option value="2">A2</option>
+                  <option value="3">A3</option>
+                </select></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><label for="exampleFormControlInput1" class="form-label">Display Grade as</label></div>
+              <div class ="col-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Percentage</option>
+                  <option value="1">Grade</option>
+                  <option value="2">Points</option>
+                </select></div>
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class ="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Do not count this assignment towards the final grade
+                  </label>
+                </div></div>
+            </div>
+            <div class="row">
+              <div class="col-3"><label for="exampleFormControlInput1" class="form-label">Submission Type</label></div>
+              <div class ="col-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Online</option>
+                  <option value="1">Paper</option>
+                </select><br/>
+                <b>Online Entry Options</b><br /><br/>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Text Entry
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Website URL
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Media Recordings
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Student Annotation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    File Uploads
+                  </label>
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-3">Assign</div>
+                <div class ="col-6">
+                  <b>Assign to</b><br/>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Everyone">
+                  <b>Due</b>
+                  <section class="container">
+                   <form>
+                        <div class="row form-group">
+                            <div class="col-m-5">
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                   </form>
+                </section>
+                <b>Available from</b>
+                <section class="container">
+                 <form>
+                      <div class="row form-group">
+                          <div class="col-m-5">
+                              <div class="input-group date" id="datepicker">
+                                  <input type="text" class="form-control">
+                                  <span class="input-group-append">
+                                      <span class="input-group-text bg-white">
+                                          <i class="fa fa-calendar"></i>
+                                      </span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                 </form>
+              </section>
+              <b>Until</b>
+              <section class="container">
+               <form>
+                    <div class="row form-group">
+                        <div class="col-m-5">
+                            <div class="input-group date" id="datepicker">
+                                <input type="text" class="form-control">
+                                <span class="input-group-append">
+                                    <span class="input-group-text bg-white">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+               </form>
+            </section>
+            <button type="button" class="btn btn-light">+Add</button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="float-end">
+            <button type="button" class="btn btn-light">Cancel</button>
+            <button type="button" class="btn btn-danger">Save</button></div></div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+  integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+      $('#datepicker').datepicker();
+  });
+</script>

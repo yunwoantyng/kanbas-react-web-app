@@ -48,3 +48,18 @@
     color: red;
     text-decoration: none;
 }
+
+.wd-kanbas-navigation-pop.list-group{
+    --bs-list-group-border-color:white;
+}
+
+.wd-kanbas-navigation-pop a{
+    color:red;
+    text-decoration: none;
+}
+
+.wd-kanbas-navigation-pop i{
+    color:red;
+    text-decoration: none;
+    margin: 5px;
+}

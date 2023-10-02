@@ -1,149 +1,316 @@
-<table border="1" width="100%">
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Panopto Video</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="#">Announcements</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Rubrics</a></li>
-          <li><a href="#">Outcomes</a></li>
-          <li><a href="#">Collaborations</a></li>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <table border="1" width="100%">
-            <tr>
-                <td><a href="/Kanbas/Courses/Settings/screen.html">Course Details</a></td>
-                <td><a href="#">Sections</a></td>
-                <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
-                <td><a href="#">Apps</a></td>
-                <td><a href="#">Feature Options</a></td>
-                <td><a href="#">Integrations</a></td>
-            </tr>
-        </table><br />
-        Drag and drop items to reorder them in the course navigation.<br /><br />
-        <table border="1" width="60%">
-            <tr>
-                <td>Home</td>
-            </tr>
-            <tr>
-                <td>Modules</td>
-            </tr>
-            <tr>
-                <td>Piazza</td>
-            </tr>
-            <tr>
-                <td>Zoom Meetings</td>
-            </tr>
-            <tr>
-                <td>Assignments</td>
-            </tr>
-            <tr>
-                <td>Quizzes</td>
-            </tr>
-            <tr>
-                <td>Grades</td>
-            </tr>
-            <tr>
-                <td>People</td>
-            </tr>
-            <tr>
-                <td>Panopto Video</td>
-            </tr></table><br />
-        Drag items here to hide from students.<br />
-        Disabling most pages will cause students who visit those pages to be redirected to the course home page.<br />
-        <table border="1" width="60%">
-            <tr>
-                <td>Chat<br/>
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>SCORM<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Attendance<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Barnes and Noble Bookstore<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Digication<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Top Hat<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Syllabus<br />
-                    &nbsp&nbsp&nbspPage disabled, will redirect to course home page</td>
-            </tr>
-            <tr>
-                <td>Perusall<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Microsoft Teams Meetings<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>FACT Reporting and Photo Roster<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Progress Reports(Navigate)<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Microsoft Teams for Canvas<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>VHL Central<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Gradescope 1.3<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>Credentials<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-            <tr>
-                <td>iClicker<br />
-                    &nbsp&nbsp&nbspPage disabled, won't appear in navigation</td>
-            </tr>
-        </table><br />
-        <button>Save</button>        
-      </td>
-    </tr>
-  </table>
+<link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
+<link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+<link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="wd-breadcrumb navbar navbar-expand-lg" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
+    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+  </ol>
+</nav>
+
+
+<div class="container-fluid" style="padding: 0rem">
+  <div class ="d-flex">
+    <div class="wd-kanbas-navigation" style="position:static">
+        <ul class="list-group wd-kanbas-navigation">
+          <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+          <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
+              <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+              Account</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              Dashboard</a></li>
+          <li class="list-group-item active"><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Courses</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+      </ul>
+    </div>
+      <div class="list-group wd-course-navigation">
+        <a
+          href="/Kanbas/Courses/Home/screen.html"
+          class="list-group-item list-group-item-action"
+          aria-current="true">
+          Home
+        </a>
+        <a 
+          href="/Kanbas/Courses/Modules/screen.html" 
+          class="list-group-item list-group-item-action"
+          aria-current="true">
+          Modules</a>
+        <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+        <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+        <a 
+          href="/Kanbas/Courses/Assignments/screen.html"
+          class="list-group-item list-group-item-action">Assignments</a>
+        <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+        <a 
+          href="/Kanbas/Courses/Grades/screen.html" 
+          class="list-group-item list-group-item-action">
+          Grades</a>
+        <a href="#" class="list-group-item list-group-item-action">People</a>
+        <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+        <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+        <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+        <a href="#" class="list-group-item list-group-item-action">Pages</a>
+        <a href="#" class="list-group-item list-group-item-action">Files</a>
+        <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+        <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+        <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+        <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+        <a 
+          href="/Kanbas/Courses/Settings/screen.html" 
+          class="list-group-item list-group-item-action active">
+          Settings</a>
+      </div>
+      <div class="wd-settings">
+        <div class="col" style="margin-top: 120px">
+          <div class="row" style="margin-bottom:20px">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Course Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Navigation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Apps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feature Options</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Integrations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row" style="margin:20px">
+            Drag and drop items to reorder them in the course navigation.
+          </div>
+          <div class="row" style="margin:20px">
+            <ul class="list-group">
+                <li class="list-group-item title">Home
+                </li>
+                <li class="list-group-item indented">Modules
+                  <div class="float-end">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                  </div>
+                </li>
+                <li class="list-group-item indented">Piazza
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">Zoom Meetings
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">Assignments
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">Quizzes
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">Grades
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">People
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+                <li class="list-group-item indented">Panopto Video
+                    <div class="float-end">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i>
+                    </div>
+                </li>
+            </ul>
+          </div>
+          <div class="row" style="margin:20px">
+            Drag items here to hide from students.<br />
+            Disabling most pages will cause students who visit those pages to be redirected to the course home page.<br />
+          </div>
+          <div class="row" style="margin:20px">
+            <ul class="list-group wd-navigation">
+                <li class="list-group-item">
+                    Chat<br/>
+                        <div class="indented">
+                            Page disabled, won't appear in navigation
+                          <div class="float-end">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                        </div>
+                </li>
+                <li class="list-group-item">
+                    SCORM<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    Attendance<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>        
+                <li class="list-group-item">
+                    Barnes and Noble Bookstore<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Digication<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Top Hat<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Syllabus<br/>
+                      <div class="indented">
+                        Page disabled, will redirect to course home page
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Perusall<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Microsoft Teams Meetings<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    FACT Reporting and Photo Roster<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Progress Reports(Navigate)<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Microsoft Teams for Canvas<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    VHL Central<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Gradescope 1.3<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    Credentials<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+                <li class="list-group-item">
+                    iClicker<br/>
+                      <div class="indented">
+                          Page disabled, won't appear in navigation
+                        <div class="float-end">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
+                      </div>
+                </li>  
+            </ul>
+          </div>
+          <div class="row" style="margin:20px">
+            <div class="col">
+                <button type="button" class="btn btn-danger">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+  integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+      $('#datepicker').datepicker();
+  });
+</script>
