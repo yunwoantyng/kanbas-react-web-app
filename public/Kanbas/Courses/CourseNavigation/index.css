@@ -38,6 +38,16 @@
     text-decoration: none;
 }
 
+.wd-profile .col a{
+    color: black;
+    text-decoration: none;
+}
+
+.wd-profile .row{
+   width:900px;
+   margin:20px;
+}
+
 
 .wd-button a{
     color: black;
@@ -45,7 +55,7 @@
 }
 
 .wd-breadcrumb {
-    width: 1500px;
+    width: 1800px;
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
@@ -53,6 +63,7 @@
     padding: 10px;
     border-bottom: 1px solid gray;
     background-color: white;
+    z-index: 5000;
 }
 
 .wd-breadcrumb i{
@@ -146,6 +157,12 @@
     font-weight: bold;
     font-size: 18px;
 }
+
+.wd-assignments .list-group-item a{
+   color:black;
+   font-weight: bolder;
+}
+
 
 .wd-assignments .indented{
     padding-left: 40px;

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
-<nav class="wd-breadcrumb navbar navbar-expand-lg" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
+<nav class="wd-breadcrumb navbar navbar-expand-lg fixed-top d-none d-md-block" style="--bs-breadcrumb-divider: '>'; position:fixed; left:100px" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
     <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
@@ -15,7 +15,7 @@
 
 <div class="container-fluid" style="padding: 0rem">
   <div class ="d-flex">
-    <div class="wd-kanbas-navigation" style="position:static">
+    <div class="wd-kanbas-navigation">
         <ul class="list-group wd-kanbas-navigation">
           <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
           <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
@@ -36,7 +36,7 @@
           <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
       </ul>
     </div>
-      <div class="list-group wd-course-navigation">
+    <div class="list-group wd-course-navigation">
         <a
           href="/Kanbas/Courses/Home/screen.html"
           class="list-group-item list-group-item-action"
@@ -73,8 +73,9 @@
           href="/Kanbas/Courses/Settings/screen.html" 
           class="list-group-item list-group-item-action">
           Settings</a>
-      </div>
-      <div>
+    </div>
+
+    <div class="container" style="margin-left:15px">
         <div class="col" style="margin-top: 120px">
           <div class="row">
             <div class="container-fluid dropdown" style="margin-left:100px">
@@ -93,7 +94,7 @@
               </div>
             </div>
           </div>
-
+      
           <div class="row" style="margin:10px">
               <div class="col-6">
                 <h6>Student Names</h6>
@@ -120,7 +121,7 @@
               <i class="fa fa-filter" aria-hidden="true"></i>Apply Filters</a>
            </div>
           </div>
-
+      
           <div class="row" style="margin:10px">
             <table class="table table-striped text-center">
               <thead>
@@ -206,11 +207,86 @@
                   <td>100</td>
                   <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
                 </tr>
+
+                <tr>
+                  <th scope="row">Allen Carter</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jacky Wang</th>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tatyana Foley</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Marley Chan</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Julio Wu</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Alexa Drago</th>
+                  <td>90</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <th scope="row">Kelsey Beckham</th>
+                  <td>90</td>
+                  <td>100</td>
+                  <td>98</td>
+                  <td>88</td>
+                  <td>92</td>
+                  <td>100</td>
+                  <td><input type="number" min="0" step="1" class="form-control" placeholder="100"></td>
+                </tr>
+
               </tbody>
             </table>
           </div>
         </div>
-      </div>
+    </div>     
+      
+
+      
     </div>
   </div>
 

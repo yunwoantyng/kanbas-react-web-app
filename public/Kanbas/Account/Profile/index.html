@@ -1,41 +1,40 @@
 <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
 <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
-<nav style="left : 100px" class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
-      &nbsp&nbsp&nbsp&nbsp&nbsp
-      Alice Wonderland's Profile
-    </a>
-  </div>
+<nav class="navbar navbar-expand-lg fixed-top bg-white" style="position:fixed; margin-left:100px">
+    <div style="margin-left:20px; margin-right:50px">
+      <i class="fa fa-bars" aria-hidden="true" style="color:red; font-size:30px"></i></div> 
+    <div style="font-size:30px">Alice Wonderland's Profile</div>
 </nav>
 
-<div class="container-fluid">
+
+<div class="container-fluid" style="padding: 0rem">
   <div class ="d-flex">
-    <div style="position: fixed; top: 0px; left: 0px">
-      <ul class="list-group wd-kanbas-navigation">
-        <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
-        <li class="list-group-item active"><a href="/Kanbas/Account/Profile/index.html">
-            <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
-            Account</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>
-            Dashboard</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            Courses</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            Calendar</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+    <div class="wd-kanbas-navigation" style="position:static">
+        <ul class="list-group wd-kanbas-navigation">
+          <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+          <li class="list-group-item active"><a href="/Kanbas/Account/Profile/index.html">
+              <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+              Account</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              Dashboard</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Courses</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+      </ul>
     </div>
-    <div style="position: fixed; left: 107px; top: 70px" class="list-group wd-course-navigation">
+    <div class="list-group wd-course-navigation">
         <a href="#" class="list-group-item list-group-item-action">Notifications</a>
         <a href="/Kanbas/Account/Profile/index.html" class="list-group-item list-group-item-action active">Profile</a>
         <a href="#" class="list-group-item list-group-item-action">Files</a>
@@ -46,23 +45,46 @@
         <a href="#" class="list-group-item list-group-item-action">Qwickly Course<br/>Tools</a>
         <a href="#" class="list-group-item list-group-item-action">Global<br/>Announcement</a>
     </div>
-    <div style="position: relative; left: 260px; top: 20px" class="wd-profile">
-      <i class="fa fa-user-circle-o" aria-hidden="true" style="color:gray; font-size: 10em"></i><br/><br/>
-      <h1>Alice Wonderland</h1>
-      <br />
-      <h2>Contact</h2>
-      No registered services, you can add some on the <a href="#">settings</a> page.<br/><br />
-      <h2>Biography</h2>
-      I followed the white rabbit down the hole.<br /><br />
-      <h2>Links</h2>
-      <i class="fa fa-link" aria-hidden="true"></i>&nbsp&nbsp
-      <a href="https://www.youtube.com/watch?v=yvv13q691bE&t=1816s">YouTube
-        <i class="fa fa-external-link" aria-hidden="true"></i>
-      </a><br/><br />
-    </div>
-    <div style="position: fixed; top: 150px; right: 200px" class="float-end">
-      <a href="/Kanbas/Account/Profile/edit.html" class="btn btn-light" role="button" data-bs-toggle="button">
-        <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile</a>
+    <div class="wd-profile" style="margin-top:100px">
+      <div class="row">
+        <div class="col">
+          <i class="fa fa-user-circle-o" aria-hidden="true" style="color:gray; font-size: 10em"></i>
+        </div>
+        <div class="col">
+          <a href="/Kanbas/Account/Profile/edit.html" class="btn btn-light" role="button" data-bs-toggle="button">
+            <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile</a>
+        </div>
+      </div>
+      <div class="row">
+        <h1>Alice Wonderland</h1>
+      </div>
+      <div class="row">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div>No registered services, you can add some on the <a href="#">settings</a> page.</div>
+      </div>
+      <div class="row">
+        <h2>Biography</h2>
+      </div>  
+      <div class="row">
+        <div>I followed the white rabbit down the hole.</div>
+      </div>
+      <div class="row">
+        <h2>Links</h2>
+      </div>
+      <div class="row">
+        <i class="fa fa-link" aria-hidden="true">
+        <a href="https://www.youtube.com/watch?v=yvv13q691bE&t=1816s">YouTube
+        <i class="fa fa-external-link" aria-hidden="true"></i></a></i>
+      </div>
+      <div class="row" style="margin-bottom:500px"></div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
