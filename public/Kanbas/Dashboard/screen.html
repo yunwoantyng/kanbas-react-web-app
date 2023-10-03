@@ -4,9 +4,10 @@
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
+
 <div class="container-fluid" style="padding: 0rem">
   <div class ="d-flex">
-    <div class="wd-kanbas-navigation" style="position:static">
+    <div class="wd-kanbas-navigation d-none d-md-block" style="position:static">
         <ul class="list-group wd-kanbas-navigation">
           <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
           <li class="list-group-item"><a href="/Kanbas/Account/Profile/index.html">
@@ -27,108 +28,268 @@
           <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
       </ul>
     </div>
-      <div style="position:fixed; left: 100px"><h1>Dashboard</h1>
-      <hr/>
-      <h2>Published Courses(8)</h2>
-      <hr/>
-      <div class="row row-cols-md-3 g-4 wd-dashboard-grid">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                CS4550.12631.202410<br/>
-                202410_1 Fall 2023 Semester Full Term
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS4550 19353 Web Development SEC 02 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
+      
+     <div style="margin-left:35px; margin-top:5px;">
+        <h1>Dashboard</h1>
+        <hr/>
+        <h2>Published Courses(8)</h2>
+        <hr/>
+        
+      <div class="wd-dashboard-grid">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left:20px; padding-right:130px">
+          <div class="col">
+            <div class="card h-100" style="margin-bottom:50px">
+              <a href="/Kanbas/Courses/Home/screen.html">
+              <img src="/images/gwen.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
+                <p class="card-text">
                   CS4550.12631.202410<br/>
                   202410_1 Fall 2023 Semester Full Term
-              </p>
+                </p></a>
+              </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="/Kanbas/Courses/Home/screen.html">
+              <img src="/images/gwen.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">CS4550 19353 Web Development SEC 02 Fall 2023 [BOS-1-TR]</h5>
+                <p class="card-text">
+                    CS4550.12631.202410<br/>
+                    202410_1 Fall 2023 Semester Full Term
+                </p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="/Kanbas/Courses/Home/screen.html">
+              <img src="/images/gwen.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">CS5610 20040 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
+                <p class="card-text">
+                    CS5610.20040.202310<br/>
+                    202310_2 Fall 2023 Semester Full Term
+                </p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <a href="/Kanbas/Courses/Home/screen.html">
+              <img src="/images/gwen.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">CS5610 41752 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
+                <p class="card-text">
+                    CS5610.41752.202340<br/>
+                    202340_2 Fall 2023 Semester Full Term
+                </p></a>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/images/gwen.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
+                  <p class="card-text">
+                    CS4550.12631.202410<br/>
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/images/gwen.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CS4550 19353 Web Development SEC 02 Fall 2023 [BOS-1-TR]</h5>
+                  <p class="card-text">
+                      CS4550.12631.202410<br/>
+                      202410_1 Fall 2023 Semester Full Term
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/images/gwen.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CS5610 20040 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
+                  <p class="card-text">
+                      CS5610.20040.202310<br/>
+                      202310_2 Fall 2023 Semester Full Term
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+     <div class="list-group wd-course-navigation d-none d-md-block" style="margin-left:40px">
+      <div class="row">
+        <div class="col">
+          <h3>Course Status</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:0px; padding:0px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-ban" aria-hidden="true">Unpublish</i></button>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS5610 20040 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.20040.202310<br/>
-                  202310_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
-          </div>
+          <button type="button" class="btn btn-success btn-block"><i class="fa fa-check-circle" aria-hidden="true">Published</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-cloud-download" aria-hidden="true">Import Existing Content</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-gg-circle" aria-hidden="true">Import From Commons</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-podcast" aria-hidden="true">Choose Home Page</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-signal" aria-hidden="true">View Course Stream</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-bullhorn" aria-hidden="true">New Announcement</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-area-chart" aria-hidden="true">New Analytics</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px">
+          <button type="button" class="btn btn-light btn-block"><i class="fa fa-bell" aria-hidden="true">View Course Notifications</i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:5px; margin-top:15px">
+          <b>To Do</b>
+        </div>
+      </div>       
+      <div class="row">
+        <div class="col" style="margin:0px">
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <i class="fa fa-dot-circle-o" aria-hidden="true" style="font-size: 20px; color:red"></i>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS5610 41752 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.41752.202340<br/>
-                  202340_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
+          <div style="color:red">Grade A1 - ENV + HTML
+          <div class="float-end" style="color:gray"><i class="fa fa-times" aria-hidden="true"></i></div>
           </div>
+        </div>
+      </div>
+      <div class="row" style="margin:0px">
+        <div class="col" style="margin:0px">
+          <div style="padding:15px; color:gray">100 points | Sep 18th 11:59pm</div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:10px">
+        <div class="col">
+          <b>Coming Up</b>
+        </div>
+        <div class="col" style="padding:0px">
+          <div class="float-end" style="color:red">
+            <i class="fa fa-calendar" aria-hidden="true" style="color:gray"></i>View Calendar</div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin:0px">
+          <hr/>
+        </div>
+      </div>
+      <div class="row" style="margin-top:5px">
+        <div class="col-2">
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS5610 11550 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.11550.202410<br/>
-                  202410_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
-          </div>
+          <div style="color:red">Lecture</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS5610 17387 Web Development SEC 02 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.17387.202410<br/>
-                  202410_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
-          </div>
+          <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 11:45am</div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:5px">
+        <div class="col-2">
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS4550 19353 Web Development SEC 02 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.17387.202410<br/>
-                  202410_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
-          </div>
+          <div style="color:red">CS5610 06 SP23 Lecture</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="/images/gwen.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CS5610 17367 Web Development SEC 01 Fall 2023 [BOS-1-TR]</h5>
-              <p class="card-text">
-                  CS5610.17387.202410<br/>
-                  202410_2 Fall 2023 Semester Full Term
-              </p>
-            </div>
-            </div>
-          </div>
+          <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 6pm</div>
         </div>
-      </div>      
+      </div>
+      <div class="row" style="margin-top:5px">
+        <div class="col-2">
+          <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
+        </div>
+        <div class="col">
+          <div style="color:red">CS5610 Web Development Summer 1 - 2023 LECTURE</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col">
+          <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 7pm</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
     </div>
   </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+  integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>

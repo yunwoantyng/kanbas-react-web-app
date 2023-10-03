@@ -1,5 +1,7 @@
 .wd-dashboard-grid .col-md-4{
     width: 250px;
+    height: 500px;
+    border-radius: 0%;
 }
 
 .wd-dashboard-grid .col {
