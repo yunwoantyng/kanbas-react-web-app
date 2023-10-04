@@ -1,14 +1,29 @@
-.wd-dashboard-grid .col-md-4{
-    width: 250px;
-    height: 500px;
-    border-radius: 0%;
-}
+
 
 .wd-dashboard-grid .col {
+    font-size: small;
     width: 250px;
+}
+
+.wd-dashboard-grid .card-title {
+    color:rgb(0, 115, 255);
 }
 
 .wd-dashboard-grid a{
+    font-size: small;
     color: rgb(78, 95, 160);
     text-decoration: none;
+}
+
+.wd-dashboard-grid img{
+    width: 200px;
+    height: 100px;
+}
+
+
+.wd-dashboard-grid .card {
+    width: 250px;
+    height: 250px;
+    border-radius: 0%;
+    margin: 20px;
 }
