@@ -1,41 +1,40 @@
 <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+<link rel="stylesheet" href="/Kanbas/Dashboard/index.css" />
 <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
-<nav style="left:100px" class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">
-      <i class="fa fa-bars" aria-hidden="true" style="color:red"></i>
-      &nbsp&nbsp&nbsp&nbsp&nbsp
-      Alice Wonderland's Profile
-    </span>
-  </div>
+<nav class="navbar navbar-expand-lg fixed-top bg-white" style="position:fixed; margin-left:100px; justify-content:flex-start">
+    <div style="margin-left:20px; margin-right:50px">
+      <i class="fa fa-bars" aria-hidden="true" style="color:red; font-size:30px"></i></div> 
+    <div style="font-size:30px">Alice Wonderland's Profile</div>
 </nav>
 
-<div class="container-fluid">
+
+<div class="container-fluid" style="padding: 0rem">
   <div class ="d-flex">
-    <div style="position: fixed; top: 0px; left: 0px">
-      <ul class="list-group wd-kanbas-navigation">
-        <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
-        <li class="list-group-item active"><a href="/Kanbas/Account/Profile/index.html">
-            <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
-            Account</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>
-            Dashboard</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            Courses</a></li>
-        <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            Calendar</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
-        <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
-      </div>
-      <div style="position: fixed; left: 107px; top: 70px" class="list-group wd-course-navigation">
+    <div class="wd-kanbas-navigation" style="position:static">
+        <ul class="list-group wd-kanbas-navigation">
+          <li class="list-group-item"><i class="fa fa-paw" aria-hidden="true"></i></li>
+          <li class="list-group-item active"><a href="/Kanbas/Account/Profile/index.html">
+              <i class="fa fa-user-circle-o" style="color:gray" aria-hidden="true"></i>
+              Account</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              Dashboard</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Courses/Home/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i>
+              Courses</a></li>
+          <li class="list-group-item"><a href="/Kanbas/Calendar/screen.html">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>Inbox</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>History</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-film" aria-hidden="true"></i>Studio</a></li>
+          <li class="list-group-item"><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>Help</a></li>
+      </ul>
+    </div>
+    <div class="list-group wd-course-navigation">
         <a href="#" class="list-group-item list-group-item-action">Notifications</a>
         <a href="/Kanbas/Account/Profile/index.html" class="list-group-item list-group-item-action active">Profile</a>
         <a href="#" class="list-group-item list-group-item-action">Files</a>
@@ -46,84 +45,103 @@
         <a href="#" class="list-group-item list-group-item-action">Qwickly Course<br/>Tools</a>
         <a href="#" class="list-group-item list-group-item-action">Global<br/>Announcement</a>
     </div>
-    <div style="position: relative; left: 280px; top: 100px">
-      <i class="fa fa-user-circle-o" aria-hidden="true" style="color:gray; font-size: 10em"></i><br/><br/>
-      <div class="mb-3 row">
-        <label for="name" class="col-sm-2 col-form-label"><b>Name:*</b></label>
-        <input type="text" class="form-control" id="name" value="Alice Wonderland">
+    <div class="wd-profile" style="margin-top:100px">
+      <div class="row">
+        <div class="col">
+          <i class="fa fa-user-circle-o" aria-hidden="true" style="color:gray; font-size: 10em"></i>
+        </div>
+        <div class="col">
+          <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
+            <i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</a>
+        </div>
       </div>
-      <div class="mb-3 row"><b>Pronouce:</b>
+      <div class="row">
+        <b>Name:*</b>
+      </div>
+      <div class="row" style="width:450px">
+        <input type="text" class="form-control" id="name" value="Alice Wonderland"/>
+      </div>
+      <div class="row">
+        <b>Pronouce:</b>
+      </div>
+      <div class="row" style="width:400px">
         <select class="form-select">
           <option selected>None</option>
           <option value="1">She/Her</option>
           <option value="2">He/Him</option>
           <option value="3">Prefer not to say</option>
        </select>
+      </div>  
+      <div class="row">
+        <b>Title:</b>
       </div>
-      <div class="mb-3 row">
-        <label for="title" class="col-sm-2 col-form-label"><b>Title:</b></label>
+      <div class="row"style="width:450px">
         <input type="text" class="form-control" id="title">
       </div>
-      <h2>Contact</h2>
-      No registered services, you can add some on the <a href="#" style="color:red;text-decoration: none">settings</a> page.<br/><br />
-      <div class="mb-3 row">
-        <label for="biography"
-               class="col-sm-2 col-form-label">
-               <h2>Biography</h2></label>
+      <div class="row">
+        <h2>Contact</h2>
+      </div>
+      <div class="row" style="width:450px">
+        <div>No registered services, you can add some on the <a href="#">settings</a> page.</div>
+      </div>
+      <div class="row">
+        <h2>Biography</h2>
+      </div>
+      <div class="row" style="width:450px">
         <textarea class="form-control"
-                  id="biography"
-                  rows="3"
-                  value="I followed the white rabbit down the hole."></textarea>
+        id="biography"
+        rows="3"
+        value="I followed the white rabbit down the hole.">
+        </textarea>
       </div>
-      <h2>Links</h2>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-5">
-            <b>Title</b>
-          </div>
-          <div class="col-1"> </div>
-          <div class="col-5">
-            <b>URL</b>
-          </div>
-          <div class="col-1"> </div>
+      <div class="row">
+        <h2>Links</h2>
+      </div>
+      <div class="row"style="width:450px">
+        <div class="col" style="text-align:center">
+          <b>Title</b>
         </div>
-        <div class="row">
-          <div class="col-5">
-            <input type="text" value="YouTube">
-          </div>
-          <div class="col-1">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </div>
-          <div class="col-5">
-            <input type="text" value="https://www.youtube.com/">
-          </div>
-          <div class="col-1">
-            <i class="fa fa-times" aria-hidden="true" style="color:red"></i>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-5">
-          <button type="button" class="btn btn-light">Add another link</button>
-        </div>
+        <div class="col" style="text-align:center">
+          <b>URL</b>
         </div>
       </div>
+      <div class="row" style="width:450px">
+        <div class="col-5">
+          <input type="text" value="YouTube">
+        </div>
+        <div class="col-1">
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </div>
+        <div class="col-5">
+          <input type="text" value="https://www.youtube.com/">
+        </div>
+        <div class="col-1">
+          <i class="fa fa-times" aria-hidden="true" style="color:red"></i>
+        </div>
+      </div>
+      <div class="row" style="width:450px">
+        <div class="col-5">
+        <button type="button" class="btn btn-light">Add another link</button>
+        </div>
+      </div>
+      <div class="row" style="margin:15px; width:450px">
         <hr/>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col-4">
-            <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
-               Cancel</a>
-          </div>
-          <div class="col-4">
-            <a href="/Kanbas/Account/Profile/index.html" class="btn btn-danger" role="button" data-bs-toggle="button">
-               Save Profile</a>
-          </div>
       </div>
-    </div>
-    <div class="float-end" style="position:fixed; top: 150px; right:200px">
-      <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
-        <i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing</a>
+      <div class="row" style="width:450px">
+        <div class="col-6"></div>
+        <div class="col">
+          <a href="/Kanbas/Account/Profile/index.html" class="btn btn-light" role="button" data-bs-toggle="button">
+            Cancel</a>
+          <a href="/Kanbas/Account/Profile/index.html" class="btn btn-danger" role="button" data-bs-toggle="button" style="color:white">
+            Save Profile</a>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-bottom:500px"></div>
     </div>
   </div>
 </div>
+
+
 
