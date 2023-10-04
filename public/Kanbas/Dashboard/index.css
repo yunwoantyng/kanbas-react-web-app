@@ -1,29 +1,41 @@
-
-
-.wd-dashboard-grid .col {
-    font-size: small;
-    width: 250px;
-}
-
 .wd-dashboard-grid .card-title {
     color:rgb(0, 115, 255);
+    font-weight: 700;
+}
+
+.wd-dashboard-grid .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wd-dashboard-grid{
+    font-size: small;
+    color: black;
+    text-decoration: none;
 }
 
 .wd-dashboard-grid a{
     font-size: small;
-    color: rgb(78, 95, 160);
+    color: black;
     text-decoration: none;
 }
 
 .wd-dashboard-grid img{
-    width: 200px;
-    height: 100px;
+    border-radius: 0%;
+    width: 270px;
+    height: 150px;
 }
 
 
 .wd-dashboard-grid .card {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     border-radius: 0%;
     margin: 20px;
+}
+
+.wd-dashboard-grid .col {
+    width: 300px;
+    height: 300px;
 }
