@@ -79,27 +79,45 @@
 
 .wd-breadcrumb-black {
     position:fixed-top;
-    width: 1100px;
-    height: 150px;
+    height: 85px;
     margin: 0px;
     padding: 0px;
     color: white;
-    background-color: blue;
+    background-color: black;
     text-decoration: none;
 }
 
-.wd-breadcrumb-black a{
+.wd-breadcrumb-black .row a{
     color: white;
     text-decoration: none;
-    font-size: large;
+    font-size: 1.1em;
+    margin:0px;
+    padding:0px;
     text-align: center;
 }
 
 .wd-breadcrumb-black i{
     color: white;
-    margin-right: 50px;
-    padding-left:10px;
-    font-size: 2em;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.wd-breadcrumb-black .row{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+.wd-breadcrumb-black .col-2{
+    color: white;
+    text-decoration: none;
+    font-size: 0.5em;
+    margin:5px;
+    padding:1px;
+    text-align: center;
 }
 
 .wd-modules {
@@ -154,10 +172,10 @@
     padding-left: 20px;
     margin-bottom: 1px;
     color: black;
-    background-color: white;
     font-weight: bold;
     font-size: 18px;
 }
+
 
 .wd-assignments .list-group-item a{
    color:black;
@@ -190,6 +208,11 @@
 
 .wd-settings a{
     color:red;
+}
+
+.wd-settings {
+    width:max-content;
+    margin-right:100px;
 }
 
 .wd-settings .col-3.title{

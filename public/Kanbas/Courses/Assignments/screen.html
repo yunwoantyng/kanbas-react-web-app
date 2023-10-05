@@ -4,12 +4,19 @@
 <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
 
-<nav class="wd-breadcrumb navbar navbar-expand-lg fixed-top d-none d-md-block" style="--bs-breadcrumb-divider: '>'; position:fixed;" aria-label="breadcrumb">
+<nav class="wd-breadcrumb navbar navbar-expand-lg fixed-top" style="--bs-breadcrumb-divider: '>'; position:fixed;" aria-label="breadcrumb">
+  <div class="col-5">
   <ol class="breadcrumb">
     <div style="padding-left:10px"><i class="fa fa-bars" aria-hidden="true" style="color:red"></i></div>
     <li class="breadcrumb-item"><a href="/Kanbas/Courses/Home/screen.html">CS4550.12631.202410</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Home</li>
-  </ol>
+    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+  </ol></div>
+  <div class="col-5">
+    <div class="float-end">
+      <button type="button" class="btn btn-light">
+      <i class="fa fa-binoculars" aria-hidden="true" style="font-size:15px; margin-right:10px"></i>
+      Student View</button></div>
+  </div>   
 </nav>
 
 <div class="container-fluid" style="padding: 0rem">
@@ -72,17 +79,20 @@
           href="/Kanbas/Courses/Settings/screen.html" 
           class="list-group-item list-group-item-action">
           Settings</a>
-      </div>
-      <div>
-        <div class="col" style="margin-top: 120px">
+    </div>
+      
+    <div class="col" style="margin-top: 120px; margin-right:100px">
           <div class="row">
             <div class="container-fluid">
               <div class="float-start"><input type="text" class="form-control" placeholder="Search for Assignment"></div>
-            <div class="float-end"><a href="#" class="btn btn-light" role="button" data-bs-toggle="button">+ Group</a>
-            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">+ Assignment</a></div>
+            <div class="float-end">
+              <a href="#" class="btn btn-light" role="button" data-bs-toggle="button">+ Group</a>
+              <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button">+ Assignment</a>
+              <a href="#" class="btn btn-light" role="button" data-bs-toggle="button">
+                <i class="fa fa-ellipsis-v" aria-hidden="true" style="font-size:25px"></i></a>
             </div>
-          </div>
-          </div>
+            </div>
+        
           
           <div class="row" style="margin-top:20px">
             <hr/>
@@ -91,7 +101,9 @@
            <ul class="list-group wd-assignments">
              <li class="list-group-item list-group-item-secondary"><i class="fa fa-chevron-down" aria-hidden="true"></i>
               <b>Assignments</b>
-             <div class="float-end"><i class="fa fa-check-circle" aria-hidden="true"></i>
+             <div class="float-end">
+              <button type="button" class="btn btn-light" style="margin-right:5px">40% of Total</button>
+              <i class="fa fa-plus" aria-hidden="true" style="color:black; margin-left:0px"></i>
               <i class="fa fa-ellipsis-v" aria-hidden="true" style="color:black"></i></div>
              </li>
              <li class="list-group-item title">
@@ -155,162 +167,14 @@
                   </div>
              </li>
             </ul>
-          </div>
+          
 
           <div class="row" style="margin-bottom:500px"></div>         
 
 
-        </div>
 
-        <div class="list-group wd-course-navigation" style="margin-left:80px; margin-right:80px">
-          <div class="row">
-            <div class="col">
-              <h3>Course Status</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:0px; padding:0px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-ban" aria-hidden="true">Unpublish</i></button>
-              <button type="button" class="btn btn-success btn-block"><i class="fa fa-check-circle" aria-hidden="true">Published</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-cloud-download" aria-hidden="true">Import Existing Content</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-gg-circle" aria-hidden="true">Import From Commons</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-podcast" aria-hidden="true">Choose Home Page</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-signal" aria-hidden="true">View Course Stream</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-bullhorn" aria-hidden="true">New Announcement</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-area-chart" aria-hidden="true">New Analytics</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px">
-              <button type="button" class="btn btn-light btn-block"><i class="fa fa-bell" aria-hidden="true">View Course Notifications</i></button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:5px; margin-top:15px">
-              <b>To Do</b>
-            </div>
-          </div>       
-          <div class="row">
-            <div class="col" style="margin:0px">
-              <hr/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-1">
-              <i class="fa fa-dot-circle-o" aria-hidden="true" style="font-size: 20px; color:red"></i>
-            </div>
-            <div class="col">
-              <div style="color:red">Grade A1 - ENV + HTML
-              <div class="float-end" style="color:gray"><i class="fa fa-times" aria-hidden="true"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="row" style="margin:0px">
-            <div class="col" style="margin:0px">
-              <div style="padding:15px; color:gray">100 points | Sep 18th 11:59pm</div>
-            </div>
-          </div>
-          <div class="row" style="margin-top:10px">
-            <div class="col">
-              <b>Coming Up</b>
-            </div>
-            <div class="col" style="padding:0px">
-              <div class="float-end" style="color:red">
-                <i class="fa fa-calendar" aria-hidden="true" style="color:gray"></i>View Calendar</div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="col" style="margin:0px">
-              <hr/>
-            </div>
-          </div>
-          <div class="row" style="margin-top:5px">
-            <div class="col-2">
-              <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
-            </div>
-            <div class="col">
-              <div style="color:red">Lecture</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col">
-              <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 11:45am</div>
-            </div>
-          </div>
-          <div class="row" style="margin-top:5px">
-            <div class="col-2">
-              <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
-            </div>
-            <div class="col">
-              <div style="color:red">CS5610 06 SP23 Lecture</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col">
-              <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 6pm</div>
-            </div>
-          </div>
-          <div class="row" style="margin-top:5px">
-            <div class="col-2">
-              <i class="fa fa-calendar-check-o" aria-hidden="true" style="font-size: 20px; color:gray"></i>
-            </div>
-            <div class="col">
-              <div style="color:red">CS5610 Web Development Summer 1 - 2023 LECTURE</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col">
-              <div style="color:gray">CS4550.12631.202410<br/>Sep 11th 7pm</div>
-            </div>
-          </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-     
-        </div>
+      
 
-
-
-      </div>
-    </div>
-  </div>
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
