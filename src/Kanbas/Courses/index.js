@@ -1,5 +1,5 @@
 import db from "../../Kanbas/Database";
-import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -9,10 +9,12 @@ import Grades from "./Grades";
 
 function Courses() {
   const { courseId } = useParams();
+  const { pathname } = useLocation();
+  const [empty, kanbas, courses, id, screen] = pathname.split("/");
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1>Course {course.name}</h1>
+      <h1>Course {course.name} / {screen}</h1>
       <CourseNavigation />
       <div>
         <div
