@@ -25,6 +25,7 @@ function KanbasNavigation() {
           to={`/Kanbas/${link}`}
           className={`list-group-item ${pathname.includes(link) && "active"}`}>
           {linkToIcon[link]}
+          <br/>
           {link}
         </Link>
       ))}
