@@ -34,7 +34,15 @@ function ModuleList() {
             </li>
             <li key={index} className="list-group-item">
               <h5>Learning Objectives</h5>
-              {module.name}
+            </li>
+            <li key={index} className="list-group-item">
+              <div style={{marginLeft:30}}>{module.lesson_1}</div>
+            </li>
+            <li key={index} className="list-group-item">
+            <div style={{marginLeft:30}}>{module.lesson_2}</div>
+            </li>
+            <li key={index} className="list-group-item">
+            <div style={{marginLeft:30}}>{module.lesson_3}</div>
             </li>
           </>
       ))

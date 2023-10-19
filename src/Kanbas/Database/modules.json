@@ -4,114 +4,80 @@
       "name": "Introduction to Rocket Propulsion",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "RS101",
-      "lessons": [
-        {
-          "title": "Introduction to Rocket Propulsion",
-          "description": "Basic principles of rocket propulsion and rocket engines.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Rocket Propulsion I",
-          "description": "Overview of rocket propulsion and rocket engine types.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Rocket Propulsion II",
-          "description": "More applications of rocket propulsion and rocket engines.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        }
-      ]
+      "lesson_1": "Introduction to the theory of Rocket Propulsion",
+      "lesson_2": "Rocket Propulsion I",
+      "lesson_3": "Rocket Propulsion II"
     },
     {
       "_id": "M102",
       "name": "Fuel and Combustion",
       "description": "Understanding rocket fuel, combustion processes, and efficiency.",
       "course": "RS101",
-      "lessons": [
-        {
-          "title": "Introduction to Fuel",
-          "description": "Basic principles of rocket propulsion and rocket engines.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Combustion",
-          "description": "Overview of rocket propulsion and rocket engine types.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Efficiency",
-          "description": "Overview of rocket propulsion and rocket engine types.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        }
-       
-      ]
+      "lesson_1": "What is Fuel?",
+      "lesson_2": "What is Combustion?",
+      "lesson_3": "Combustion Efficiency"
     },
     {
       "_id": "M103",
       "name": "Nozzle Design",
       "description": "Principles of rocket nozzle design and performance optimization.",
       "course": "RS101",
-      "lessons": [
-        {
-          "title": "Introduction to Nozzle Design",
-          "description": "Basic principles of rocket propulsion and rocket engines.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Nozzle Design I",
-          "description": "Overview of rocket propulsion and rocket engine types.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        },
-        {
-          "title": "Nozzle Design II",
-          "description": "More applications of rocket propulsion and rocket engines.",
-          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
-          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
-        }
-      ]
+      "lesson_1": "What is a Rocket Nozzle?",
+      "lesson_2": "Nozzle Design",
+      "lesson_3": "Nozzle Performance" 
     },
     {
       "_id": "M201",
       "name": "Fundamentals of Aerodynamics",
       "description": "Basic aerodynamic concepts and fluid dynamics principles.",
-      "course": "RS102"
+      "course": "RS102",
+      "lesson_1": "What is Aerodynamics?",
+      "lesson_2": "What is Fluid Dynamics?",
+      "lesson_3": "Fluid Dynamics Principles"
     },
     {
       "_id": "M202",
       "name": "Subsonic and Supersonic Flow",
       "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
-      "course": "RS102"
+      "course": "RS102",
+      "lesson_1": "Subsonic Flow",
+      "lesson_2": "Supersonic Flow",
+      "lesson_3": "Supersonic Flow II"
     },
     {
       "_id": "M203",
       "name": "Aerodynamic Heating",
       "description": "Study of aerodynamic heating and thermal protection systems.",
-      "course": "RS102"
+      "course": "RS102",
+      "lesson_1": "What is Aerodynamic Heating?",
+      "lesson_2": "Aerodynamic Heating II",
+      "lesson_3": "Thermal Protection Systems"
     },
     {
       "_id": "M301",
       "name": "Spacecraft Structural Design",
       "description": "Fundamentals of designing spacecraft structures and materials selection.",
-      "course": "RS103"
+      "course": "RS103",
+      "lesson_1": "What is a Spacecraft?",
+      "lesson_2": "Spacecraft Structures",
+      "lesson_3": "Spacecraft Materials"
     },
     {
       "_id": "M302",
       "name": "Orbital Mechanics",
       "description": "Understanding orbital dynamics and mission planning.",
-      "course": "RS103"
+      "course": "RS103",
+      "lesson_1": "What is Orbital Mechanics?",
+      "lesson_2": "Orbital Mechanics II",
+      "lesson_3": "Mission Planning"
     },
     {
       "_id": "M303",
       "name": "Spacecraft Systems Engineering",
       "description": "Overview of spacecraft systems and subsystems engineering.",
-      "course": "RS103"
+      "course": "RS103",
+      "lesson_1": "What is Systems Engineering?",
+      "lesson_2": "Spacecraft Systems",
+      "lesson_3": "Spacecraft Subsystems"
     }
   ]

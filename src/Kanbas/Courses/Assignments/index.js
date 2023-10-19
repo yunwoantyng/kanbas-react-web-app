@@ -15,7 +15,7 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <div className="container">
+    <div className="container-fluid">
         <input placeholder="Search for Assignment" className="input-field" style={{width:200}} />
         <div className="float-end">
           <button className="btn btn-light">+ Group</button>
