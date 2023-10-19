@@ -12,14 +12,14 @@
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         },
         {
-          "title": "Rocket Propulsion",
+          "title": "Rocket Propulsion I",
           "description": "Overview of rocket propulsion and rocket engine types.",
           "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         },
         {
-          "title": "Rocket Propulsion",
-          "description": "Overview of rocket propulsion and rocket engine types.",
+          "title": "Rocket Propulsion II",
+          "description": "More applications of rocket propulsion and rocket engines.",
           "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         }
@@ -32,30 +32,51 @@
       "course": "RS101",
       "lessons": [
         {
-          "title": "Fuel and Combustion",
-          "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+          "title": "Introduction to Fuel",
+          "description": "Basic principles of rocket propulsion and rocket engines.",
           "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         },
         {
-          "title": "Fuel and Combustion",
-          "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+          "title": "Combustion",
+          "description": "Overview of rocket propulsion and rocket engine types.",
           "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         },
         {
-          "title": "Fuel and Combustion",
-          "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+          "title": "Efficiency",
+          "description": "Overview of rocket propulsion and rocket engine types.",
           "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
           "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
         }
+       
       ]
     },
     {
       "_id": "M103",
       "name": "Nozzle Design",
       "description": "Principles of rocket nozzle design and performance optimization.",
-      "course": "RS101"
+      "course": "RS101",
+      "lessons": [
+        {
+          "title": "Introduction to Nozzle Design",
+          "description": "Basic principles of rocket propulsion and rocket engines.",
+          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
+          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
+        },
+        {
+          "title": "Nozzle Design I",
+          "description": "Overview of rocket propulsion and rocket engine types.",
+          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
+          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
+        },
+        {
+          "title": "Nozzle Design II",
+          "description": "More applications of rocket propulsion and rocket engines.",
+          "video": "https://www.youtube.com/watch?v=1qS6zgBpXw4",
+          "reading": "https://www.grc.nasa.gov/www/k-12/airplane/rktthsum.html"
+        }
+      ]
     },
     {
       "_id": "M201",

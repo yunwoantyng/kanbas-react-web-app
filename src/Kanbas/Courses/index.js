@@ -6,6 +6,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import {FaBars} from "react-icons/fa6";
 
 function Courses() {
   const { courseId } = useParams();
@@ -13,15 +14,16 @@ function Courses() {
   const [empty, kanbas, courses, id, screen] = pathname.split("/");
   const course = db.courses.find((course) => course._id === courseId);
   return (
-    <div>
-      <h1>Course {course.name} / {screen}</h1>
+    <div className="container">
+      <h2><FaBars style={{color: "red", marginLeft: 20, marginRight: 50}}/>Course {course.name} / {screen}</h2>
+      <hr style={{width: 1500, marginBottom: 15}}/>
       <CourseNavigation />
       <div>
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
           style={{
             left: "320px",
-            top: "50px",
+            top: "70px",
           }}
         >
           <Routes>
@@ -38,3 +40,5 @@ function Courses() {
   );
 }
 export default Courses;
+
+//<h2><FaBars style={{color: "red", marginLeft: 20, marginRight: 50}}/>Course {course.name} / {screen}</h2>

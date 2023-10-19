@@ -4,16 +4,16 @@
     padding: 0px;
     width: 120px;
     margin: 0px;
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 0px;
     border: none;
   }
 .wd-course-navigation a {
-    padding-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border: none;
   }
 .wd-course-navigation a.active {
@@ -28,3 +28,6 @@
     color: red;
     text-decoration: none;
   }
+.wd-breadcrumb {
+  color: red;
+}
