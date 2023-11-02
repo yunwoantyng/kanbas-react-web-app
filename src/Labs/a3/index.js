@@ -6,16 +6,19 @@ import ConditionalOutput from "./ConditionalOutput";
 import TodoItem from "./Todos/TodoItem";
 import TodoList from "./Todos/TodoList";
 import { useSelector } from "react-redux";
-import React from "react";
 
 function Assignment3() {
-  const { todos } = useSelector((state) => state.todosRuducer);
+  const { todos } = useSelector((state) => state.todosReducer);
   return (
     <div>
       <h1>Assignment 3</h1>
-      <pre>
-        <code>{JSON.stringify(todos, null, 2)}</code>
-      </pre>
+      <ul className="list-group">
+        {todos.map((todo) => (
+          <li className="list-group-item" key={todo.id}>
+            {todo.title}
+          </li>
+        ))}
+      </ul>
       <TodoList />
       <TodoItem />
       <ConditionalOutput />

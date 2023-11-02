@@ -1,53 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
-import {GoTriangleDown} from "react-icons/go";
-import {PiDotsSixVerticalBold} from "react-icons/pi";
-import {AiOutlinePlus} from "react-icons/ai";
-import {FaEllipsisVertical} from "react-icons/fa6";
-import {FaCircleCheck} from "react-icons/fa6";
+import { GoTriangleDown } from "react-icons/go";
+import { PiDotsSixVerticalBold } from "react-icons/pi";
+import { AiOutlinePlus } from "react-icons/ai";
+import { FaEllipsisVertical } from "react-icons/fa6";
+import { FaCircleCheck } from "react-icons/fa6";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
-  const lessons = modules
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   return (
-    <>
     <ul className="list-group">
-    <>
-      {
-        modules
-         .filter((module) => module.course === courseId)
-         .map((module, index) => (
-          <>
-           <li key={index} className="list-group-item list-group-item-secondary">
-             <h4>
-             <PiDotsSixVerticalBold style={{fontSize: 20, marginRight: 5, marginLeft: 0}}/>
-             <GoTriangleDown style={{fontSize: 20, marginRight: 10, marginLeft: 0}}/>
-              {module.name} - {module.description}
-              <div className="float-end">
-                <FaCircleCheck style={{fontSize: 20, color: "green"}}/>
-                <AiOutlinePlus style={{marginLeft: 5}}/>
-                <FaEllipsisVertical style={{marginLeft: 5}}/>
-              </div>
-              </h4>
-            </li>
-            <li key={index} className="list-group-item">
-              <h5>Learning Objectives</h5>
-            </li>
-            <li key={index} className="list-group-item">
-              <div style={{marginLeft:30}}>{module.lesson_1}</div>
-            </li>
-            <li key={index} className="list-group-item">
-            <div style={{marginLeft:30}}>{module.lesson_2}</div>
-            </li>
-            <li key={index} className="list-group-item">
-            <div style={{marginLeft:30}}>{module.lesson_3}</div>
-            </li>
-          </>
-      ))
-            }</>
-    </ul></>
+      <li className="list-group-item">
+        <button
+          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+        >
+          Add
+        </button>
+        <button onClick={() => dispatch(updateModule(module))}>Update</button>
+        <input
+          value={module.name}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, name: e.target.value }))
+          }
+        />
+        <textarea
+          value={module.description}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, description: e.target.value }))
+          }
+        />
+      </li>
+      {modules
+        .filter((module) => module.course === courseId)
+        .map((module, index) => (
+          <li key={index} className="list-group-item">
+            <button onClick={() => dispatch(setModule(module))}>Edit</button>
+            <button onClick={() => dispatch(deleteModule(module._id))}>
+              Delete
+            </button>
+            <h3>{module.name}</h3>
+            <p>{module.description}</p>
+          </li>
+        ))}
+    </ul>
   );
 }
 export default ModuleList;

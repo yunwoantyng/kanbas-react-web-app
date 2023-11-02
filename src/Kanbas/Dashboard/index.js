@@ -1,39 +1,77 @@
 import db from "../Database";
 import { Link } from "react-router-dom";
+import { React, useState } from "react";
 import "./index.css";
 
-function Dashboard() {
-  const courses = db.courses;
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}) {
   return (
-    <div className="wd-dashboard-grid">
+    <div>
       <h1>Dashboard</h1>
       <hr />
       <h2>Published Courses ({courses.length})</h2>
-      <br/>
-      <div className="wd-dashboard-grid row  row-cols-1 row-cols-md-3 g-4">
-        
-          {courses.map((course, index) => (
-            <div className="card h-100">
-              <img src="/images/blue.jpg" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{course.name}</h5>
+      <br />
+      <input
+        value={course.name}
+        className="form-control"
+        onChange={(e) => setCourse({ ...course, name: e.target.value })}
+      />
+      <input
+        value={course.number}
+        className="form-control"
+        onChange={(e) => setCourse({ ...course, number: e.target.value })}
+      />
+      <input
+        value={course.startDate}
+        className="form-control"
+        type="date"
+        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+      />
+      <input
+        value={course.endDate}
+        className="form-control"
+        type="date"
+        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+      />
 
-                <Link
-                  key={course._id}
-                  to={`/Kanbas/Courses/${course._id}`}
-                  className="btn btn-primary"
-                >
-                  {course.name}
-                </Link>
-                <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          ))}
-        
+      <button onClick={addNewCourse}>Add</button>
+      <button onClick={updateCourse}>Update</button>
+
+      <br />
+      <div className="list-group">
+        {courses.map((course) => (
+          <Link
+            key={course._id}
+            to={`/Kanbas/Courses/${course._id}`}
+            className="list-group-item"
+          >
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+                setCourse(course);
+              }}
+            >
+              Edit
+            </button>
+
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+                deleteCourse(course._id);
+              }}
+            >
+              Delete
+            </button>
+
+            {course.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
