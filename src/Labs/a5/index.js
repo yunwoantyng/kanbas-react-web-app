@@ -1,8 +1,13 @@
+import EncodingParametersInURLs from "./EncodingParametersInURLs";
+import WorkingWithArrays from "./WorkingWithArrays";
+
 function Assignment5() {
-    return (
-        <div>
-        <h1>Assignment 5</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Assignment 5</h1>
+      <EncodingParametersInURLs />
+      <WorkingWithArrays />
+    </div>
+  );
 }
 export default Assignment5;
