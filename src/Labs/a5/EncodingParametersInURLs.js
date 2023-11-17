@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
 function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
+  
+
   const [assignment, setAssignment] = useState({
     id: 1,
     title: "NodeJS Assignment",
@@ -13,6 +16,8 @@ function EncodingParametersInURLs() {
   return (
     <div>
       <h3>Encoding Parameters In URLs</h3>
+      
+
       <h4>Assignment</h4>
       <input
         className="form-control"
