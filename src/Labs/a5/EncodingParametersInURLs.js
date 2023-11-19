@@ -15,18 +15,12 @@ function EncodingParametersInURLs() {
     );
     setResult(response.data);
   };
-  useEffect(
-    (a, b) => {
-      fetchSum(a, b);
-    },
-    [a, b]
-  );
-  useEffect(
-    (a, b) => {
-      fetchSubtraction(a, b);
-    },
-    [a, b]
-  );
+  useEffect(() => {
+    fetchSum(a, b);
+  }, [a, b]);
+  useEffect(() => {
+    fetchSubtraction(a, b);
+  }, [a, b]);
 
   const [assignment, setAssignment] = useState({
     id: 1,
