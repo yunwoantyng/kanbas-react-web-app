@@ -1,13 +1,16 @@
-import db from "../Database";
 import { Link } from "react-router-dom";
 import { React, useState, useEffect } from "react";
 import "./index.css";
-import axios from "axios";
 import * as client from "../Courses/client";
 
 function Dashboard() {
+  const [course, setCourse] = useState({
+    name: "New Course",
+    number: "New Number",
+    startDate: "2023-09-10",
+    endDate: "2023-12-15",
+  });
   const [courses, setCourses] = useState([]);
-  const [course, setCourse] = useState({});
   const fetchCourses = async () => {
     const courses = await client.fetchCourses();
     setCourses(courses);

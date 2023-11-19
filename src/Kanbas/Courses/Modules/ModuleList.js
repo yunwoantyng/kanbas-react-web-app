@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import { GoTriangleDown } from "react-icons/go";
 import { PiDotsSixVerticalBold } from "react-icons/pi";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -58,12 +57,14 @@ function ModuleList() {
           </div>
           <div className="col">
             <button
-              className="btn btn-primary"
-              onClick={() => dispatch(updateModule(module))}
+              className="btn btn-success"
+              onClick={() => dispatch(handleUpdateModule(module))}
             >
               Update
             </button>
-            <button onClick={handleAddModule}>Add</button>
+            <button className="btn btn-secondary" onClick={handleAddModule}>
+              Add
+            </button>
           </div>
         </div>
         <div className="row">
@@ -97,7 +98,10 @@ function ModuleList() {
                 >
                   Edit
                 </button>
-                <button onClick={() => handleDeleteModule(module._id)}>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleDeleteModule(module._id)}
+                >
                   Delete
                 </button>
                 <FaCircleCheck
