@@ -16,8 +16,6 @@ function EncodingParametersInURLs() {
   return (
     <div>
       <h3>Encoding Parameters In URLs</h3>
-      
-
       <h4>Assignment</h4>
       <input
         className="form-control"
