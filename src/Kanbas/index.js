@@ -4,7 +4,6 @@ import Account from "./Account";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import Calendar from "./Calendar";
-import db from "./Database";
 import { React, useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -38,16 +37,17 @@ function Kanbas() {
     setCourses(courses.filter((c) => c._id !== course._id));
   };
 
-  const updateCourse = () => {
+  const updateCourse = async () => {
+    const response = await axios.put(`${URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
+          return response.data;
         }
+        return c;
       })
     );
+    setCourse({ name: "" });
   };
 
   return (

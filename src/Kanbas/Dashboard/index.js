@@ -1,17 +1,44 @@
 import db from "../Database";
 import { Link } from "react-router-dom";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import "./index.css";
 import axios from "axios";
+import * as client from "../Courses/client";
 
-function Dashboard({
-  courses,
-  course,
-  setCourse,
-  addNewCourse,
-  deleteCourse,
-  updateCourse,
-}) {
+function Dashboard() {
+  const [courses, setCourses] = useState([]);
+  const [course, setCourse] = useState({});
+  const fetchCourses = async () => {
+    const courses = await client.fetchCourses();
+    setCourses(courses);
+  };
+
+  const deleteCourse = async (id) => {
+    try {
+      await client.deleteCourse(id);
+      setCourses(courses.filter((course) => course._id !== id));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const updateCourse = async () => {
+    try {
+      await client.updateCourse(course);
+      setCourses(courses.map((c) => (c._id === course._id ? course : c)));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const addCourse = async () => {
+    const newCourse = await client.addCourse(course);
+    setCourses([newCourse, ...courses]);
+  };
+
+  useEffect(() => {
+    fetchCourses();
+  }, []);
   return (
     <div className="container-fluid">
       <h1>Dashboard</h1>
@@ -42,7 +69,7 @@ function Dashboard({
       />
       <br />
 
-      <button className="btn btn-success" onClick={addNewCourse}>
+      <button className="btn btn-success" onClick={addCourse}>
         Add
       </button>
       <button className="btn btn-primary" onClick={updateCourse}>

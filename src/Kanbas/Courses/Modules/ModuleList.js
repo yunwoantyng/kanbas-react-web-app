@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { GoTriangleDown } from "react-icons/go";
@@ -12,10 +12,33 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule } from "./client";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId).then((modules) =>
+      dispatch(setModules(modules))
+    );
+  }, [courseId]);
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -40,14 +63,7 @@ function ModuleList() {
             >
               Update
             </button>
-            <button
-              className="btn btn-success"
-              onClick={() =>
-                dispatch(addModule({ ...module, course: courseId }))
-              }
-            >
-              Add
-            </button>
+            <button onClick={handleAddModule}>Add</button>
           </div>
         </div>
         <div className="row">
@@ -81,10 +97,7 @@ function ModuleList() {
                 >
                   Edit
                 </button>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => dispatch(deleteModule(module._id))}
-                >
+                <button onClick={() => handleDeleteModule(module._id)}>
                   Delete
                 </button>
                 <FaCircleCheck
