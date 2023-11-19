@@ -5,7 +5,13 @@ function WorkingWithArrays() {
   const API = "http://localhost:4000/a5/todos";
   const [id, setId] = useState(1);
   const [title, setTitle] = useState("Go to work");
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState({
+    id: 1,
+    title: "NodeJS Assignment",
+    description: "Create a NodeJS server with ExpressJS",
+    due: "2021-09-09",
+    completed: false,
+  });
 
   const fetchTodosPromise = () => {
     const promise = axios.get("http://localhost:4000/a5/todos");
