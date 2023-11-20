@@ -4,14 +4,11 @@ import Account from "./Account";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import Calendar from "./Calendar";
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
-import axios from "axios";
 
 function Kanbas() {
-  const [courses, setCourses] = useState([]);
-
   return (
     <Provider store={store}>
       <div className="d-flex">
