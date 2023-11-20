@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { React, useState, useEffect } from "react";
 import "./index.css";
-import * as client from "../Courses/client";
+import * as client from "../Courses/client.js";
 
 function Dashboard() {
   const [course, setCourse] = useState({
@@ -42,6 +42,7 @@ function Dashboard() {
   useEffect(() => {
     fetchCourses();
   }, []);
+
   return (
     <div className="container-fluid">
       <h1>Dashboard</h1>

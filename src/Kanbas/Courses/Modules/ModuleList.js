@@ -13,8 +13,8 @@ import {
   setModule,
   setModules,
 } from "./modulesReducer";
-import { findModulesForCourse, createModule } from "./client";
-import * as client from "./client";
+import * as client from "./client.js";
+import { findModulesForCourse, createModule } from "./client.js";
 
 function ModuleList() {
   const { courseId } = useParams();
