@@ -1,6 +1,7 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_BASE;
-const COURSES_URL = `${API_BASE}/courses`;
+//const API_BASE = process.env.REACT_APP_API_BASE;
+//const COURSES_URL = `${API_BASE}/courses`;
+const COURSES_URL = "http://localhost:4000/api/courses";
 
 export const fetchCourses = async () => {
   // const promise = axios.get("http://localhost:4000/api/courses");
