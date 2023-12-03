@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_BASE;
-const COURSES_URL = `${API_BASE}/courses`;
+const API_BASE = process.env.REACT_APP_BASE_API_URL;
+const COURSES_URL = `${API_BASE}/api/courses`;
 //const COURSES_URL = "https://kanbas-node-server-app-yun.onrender.com/api/courses";
 
 export const fetchCourses = async () => {
