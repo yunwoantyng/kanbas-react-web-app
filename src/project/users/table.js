@@ -6,6 +6,8 @@ import {
   BsTrash3Fill,
 } from "react-icons/bs";
 import * as client from "./client.js";
+import { Link } from "react-router-dom";
+
 function UserTable() {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({
@@ -114,6 +116,9 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
+              <td>
+                <Link to={`/project/account/${user._id}`}>{user.username}</Link>
+              </td>
               <td>{user.username}</td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
