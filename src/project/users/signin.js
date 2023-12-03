@@ -2,18 +2,25 @@ import * as client from "./client.js";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 function Signin() {
+  const [visible, setVisible] = useState(false);
+  const [error, setError] = useState("");
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
   });
   const navigate = useNavigate();
   const signin = async () => {
-    await client.signin(credentials);
-    navigate("/project/account");
+    try {
+      await client.signin(credentials);
+      navigate("/project/account");
+    } catch (err) {
+      setError("Invalid username or password");
+    }
   };
   return (
     <div>
       <h1>Signin</h1>
+      {error && <div>{error}</div>}
       <input
         style={{ margin: "8px" }}
         value={credentials.username}
@@ -23,6 +30,7 @@ function Signin() {
       />
 
       <input
+        type={visible ? "text" : "password"}
         style={{ margin: "8px" }}
         value={credentials.password}
         onChange={(e) =>

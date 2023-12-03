@@ -1,13 +1,14 @@
 import Home from "./home";
 
 import Signin from "./users/signin.js";
-//import Signup from "./users/signup";
+import Signup from "./users/signup";
 import Account from "./users/account.js";
 //import Admin from "./users/admin";
 import UserTable from "./users/table.js";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./nav";
+import Search from "./search.js";
 
 function Project() {
   return (
@@ -25,6 +26,8 @@ function Project() {
             <Route path="/home" element={<Home />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/admin/users" element={<UserTable />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/search" element={<Search />} />
           </Routes>
         </div>
       </div>

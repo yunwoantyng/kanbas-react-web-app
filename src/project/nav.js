@@ -5,6 +5,8 @@ function Nav() {
   const { pathname } = useLocation();
   const links = [
     { to: "/project/home", label: "Home" },
+    { to: "/project/search", label: "Search" },
+    { to: "/project/signup", label: "Signup" },
     { to: "/project/signin", label: "Signin" },
     { to: "/project/account", label: "Account" },
   ];

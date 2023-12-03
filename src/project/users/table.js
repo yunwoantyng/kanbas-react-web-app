@@ -9,6 +9,7 @@ import * as client from "./client.js";
 import { Link } from "react-router-dom";
 
 function UserTable() {
+  const [visible, setVisible] = useState(false);
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({
     username: "",
@@ -68,16 +69,20 @@ function UserTable() {
           <tr>
             <td>
               <input
-                value={user.password}
-                onChange={(e) => setUser({ ...user, password: e.target.value })}
-              />
-              <input
+                placeholder="Username"
                 value={user.username}
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
+              />
+              <input
+                type={visible ? "text" : "password"}
+                placeholder="Password"
+                value={user.password}
+                onChange={(e) => setUser({ ...user, password: e.target.value })}
               />
             </td>
             <td>
               <input
+                placeholder="First Name"
                 value={user.firstName}
                 onChange={(e) =>
                   setUser({ ...user, firstName: e.target.value })
@@ -86,6 +91,7 @@ function UserTable() {
             </td>
             <td>
               <input
+                placeholder="Last Name"
                 value={user.lastName}
                 onChange={(e) => setUser({ ...user, lastName: e.target.value })}
               />

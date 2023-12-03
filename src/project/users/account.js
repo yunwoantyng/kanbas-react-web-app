@@ -6,9 +6,14 @@ import { Link } from "react-router-dom";
 function Account() {
   const { id } = useParams();
   const [account, setAccount] = useState(null);
+  const [error, setError] = useState("");
   const findUserById = async (id) => {
-    const user = await client.findUserById(id);
-    setAccount(user);
+    try {
+      const user = await client.findUserById(id);
+      setAccount(user);
+    } catch (err) {
+      setError("Please sign in first");
+    }
   };
   const navigate = useNavigate();
   const fetchAccount = async () => {
@@ -30,10 +35,16 @@ function Account() {
       fetchAccount();
     }
   }, []);
-
+  if (error) {
+    <div className="w-50">
+      <h1>Account</h1>
+      {error && <div>{error}</div>}
+    </div>;
+  }
   return (
     <div className="w-50">
       <h1>Account</h1>
+      {error && <div>{error}</div>}
       {account && (
         <div>
           <input
