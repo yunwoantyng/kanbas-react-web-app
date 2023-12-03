@@ -1,12 +1,14 @@
 import { Route, Routes, Navigate } from "react-router";
 import KanbasNavigation from "./KanbasNavigation";
-import Account from "./Account";
+
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import Calendar from "./Calendar";
 import { React } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import Signin from "./users/signin";
+import Account from "./users/account";
 
 function Kanbas() {
   return (
@@ -16,7 +18,9 @@ function Kanbas() {
         <div>
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<Account />} />
+            <Route path="/users/signin" element={<Signin />} />
+            <Route path="/users/account" element={<Account />} />
+
             <Route path="Dashboard" element={<Dashboard />} />
             <Route path="Courses" element={<Dashboard />} />
             <Route path="Courses/:courseId/*" element={<Courses />} />
