@@ -49,6 +49,7 @@ function Account() {
         <div>
           <input
             style={{ margin: "8px" }}
+            placeholder="password"
             value={account.password}
             onChange={(e) =>
               setAccount({ ...account, password: e.target.value })
@@ -56,6 +57,7 @@ function Account() {
           />
           <input
             style={{ margin: "8px" }}
+            placeholder="first name"
             value={account.firstName}
             onChange={(e) =>
               setAccount({ ...account, firstName: e.target.value })
@@ -63,6 +65,7 @@ function Account() {
           />
           <input
             style={{ margin: "8px" }}
+            placeholder="last name"
             value={account.lastName}
             onChange={(e) =>
               setAccount({ ...account, lastName: e.target.value })
@@ -70,11 +73,13 @@ function Account() {
           />
           <input
             style={{ margin: "8px" }}
+            placeholder="date of birth"
             value={account.dob}
             onChange={(e) => setAccount({ ...account, dob: e.target.value })}
           />
           <input
             style={{ margin: "8px" }}
+            placeholder="email"
             value={account.email}
             onChange={(e) => setAccount({ ...account, email: e.target.value })}
           />
