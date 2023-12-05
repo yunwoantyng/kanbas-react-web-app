@@ -25,6 +25,7 @@ function Signup() {
       {error && <div>{error}</div>}
       <input
         style={{ margin: "8px" }}
+        placeholder="username"
         value={credentials.username}
         onChange={(e) =>
           setCredentials({
@@ -36,6 +37,7 @@ function Signup() {
       <input
         type={visible ? "text" : "password"}
         style={{ margin: "8px" }}
+        placeholder="password"
         value={credentials.password}
         onChange={(e) =>
           setCredentials({

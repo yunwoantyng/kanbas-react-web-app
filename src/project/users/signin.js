@@ -23,6 +23,7 @@ function Signin() {
       {error && <div>{error}</div>}
       <input
         style={{ margin: "8px" }}
+        placeholder="username"
         value={credentials.username}
         onChange={(e) =>
           setCredentials({ ...credentials, username: e.target.value })
@@ -31,6 +32,7 @@ function Signin() {
 
       <input
         type={visible ? "text" : "password"}
+        placeholder="password"
         style={{ margin: "8px" }}
         value={credentials.password}
         onChange={(e) =>
