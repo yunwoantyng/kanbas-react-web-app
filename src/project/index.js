@@ -14,7 +14,7 @@ function Project() {
   return (
     <div className="container-fluid pt-3">
       <div className="row">
-        <h1>Project</h1>
+        <h1>Project-A6</h1>
         <div className="col-2">
           <Nav />
         </div>
